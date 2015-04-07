@@ -23,7 +23,7 @@ pod "DVATableViewDatasource"
 
 Rafa Barberá, [rafa@develapps.es](mailto://rafa@develapps.es)
 Pablo Romeu, [pablo.romeu@develapps.es](mailto://pablo.romeu@develapps.es)
- 
+
 ## License
 
 DVATableViewDatasource is available under the MIT license. See the LICENSE file for more info.
