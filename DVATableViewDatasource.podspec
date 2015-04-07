@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
                        * Add simple header/footer per section.
                        * Also register cell NIBs at the tableView.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DVATableViewDatasource"
+  s.homepage         = "http://www.develapps.es"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Rafa Barberá" => "rafa@develapps.es",
