@@ -21,8 +21,8 @@ pod "DVATableViewDatasource"
 
 ## Author
 
-Rafa Barberá, rafa@develapps.es
-Pablo Romeu, pablo.romeu@develapps.es
+Rafa Barberá, [rafa@develapps.es](mailto://rafa@develapps.es)
+Pablo Romeu, [pablo.romeu@develapps.es](mailto://pablo.romeu@develapps.es)
 
 ## License
 
