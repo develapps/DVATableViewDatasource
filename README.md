@@ -10,11 +10,11 @@ UIKit.
  
 ## Installation
 
-DVATableViewDatasource is available through [DVAPods](https://bitbucket.org/DVALibs/DVAPods/dvapods.git). To install
+DVATableViewDatasource is available through [DVAPods](https://bitbucket.org/DVALibs/DVATableViewDatasource). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-source 'https://bitbucket.org/develapps/dvapods.git'
+source 'https://bitbucket.org/DVALibs/DVAPods/dvapods.git'
  
 pod "DVATableViewDatasource"
 ```
