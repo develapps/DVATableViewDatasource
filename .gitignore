@@ -22,5 +22,5 @@ build/
 *.dat
 *.dep
 
-Pods
 *.xcworkspace
+Pods

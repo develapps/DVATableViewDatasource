@@ -1,19 +1,21 @@
 {
   "name": "DVATableViewDatasource",
-  "version": "0.1.0",
-  "summary": "A short description of DVATableViewDatasource.",
-  "description": "                       An optional longer description of DVATableViewDatasource\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/DVATableViewDatasource",
+  "version": "1.0.0",
+  "summary": "A simplified datasource for UITableView.",
+  "description": "                        This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.\n                        This code allows to:\n\n                       * Create simple tableViews with one cell type, one section.\n                       * Create more complex tableView with different sections, cell types, configurations, etc.\n                       * Add simple header/footer per section.\n                       * Also register cell NIBs at the tableView.\n",
+  "homepage": "http://www.develapps.es",
   "license": "MIT",
   "authors": {
+    "Rafa Barberá": "rafa@develapps.es",
     "Pablo Romeu": "pablo.romeu@develapps.es"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/DVATableViewDatasource.git",
-    "tag": "0.1.0"
+    "git": "https://bitbucket.com/develapps/DVATableViewDatasource.git",
+    "tag": "1.0.0"
   },
+  "social_media_url": "https://twitter.com/rbarbera",
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
@@ -21,5 +23,7 @@
     "DVATableViewDatasource": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": "UIKit"
 }
