@@ -12,6 +12,3 @@
 
 @end
 
-@interface  DVATableViewControllerModel : NSObject
-
-@end

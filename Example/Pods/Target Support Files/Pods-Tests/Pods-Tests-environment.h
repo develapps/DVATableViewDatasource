@@ -9,6 +9,6 @@
 // DVATableViewDatasource
 #define COCOAPODS_POD_AVAILABLE_DVATableViewDatasource
 #define COCOAPODS_VERSION_MAJOR_DVATableViewDatasource 1
-#define COCOAPODS_VERSION_MINOR_DVATableViewDatasource 0
+#define COCOAPODS_VERSION_MINOR_DVATableViewDatasource 1
 #define COCOAPODS_VERSION_PATCH_DVATableViewDatasource 0
 

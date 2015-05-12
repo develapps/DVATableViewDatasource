@@ -23,6 +23,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6E70D0301B01E67200F4E98D /* DVATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E70D02F1B01E67200F4E98D /* DVATableViewController.m */; };
+		6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */; };
+		6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */; };
+		6EA38A651B02506700120FF7 /* DVATableViewCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A641B02506700120FF7 /* DVATableViewCellTwo.m */; };
+		6EA38A6A1B02526F00120FF7 /* DVATestCellModelTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A691B02526F00120FF7 /* DVATestCellModelTwo.m */; };
 		9DE886DDE095E7997D12BF89 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
@@ -65,6 +69,14 @@
 		67B99DC11BC53A6F7961E34E /* Pods-DVATableViewDatasource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVATableViewDatasource.release.xcconfig"; path = "Pods/Target Support Files/Pods-DVATableViewDatasource/Pods-DVATableViewDatasource.release.xcconfig"; sourceTree = "<group>"; };
 		6E70D02E1B01E67200F4E98D /* DVATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewController.h; sourceTree = "<group>"; };
 		6E70D02F1B01E67200F4E98D /* DVATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewController.m; sourceTree = "<group>"; };
+		6EA38A5D1B0249D400120FF7 /* DVATestCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATestCellModel.h; sourceTree = "<group>"; };
+		6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATestCellModel.m; sourceTree = "<group>"; };
+		6EA38A601B024B0C00120FF7 /* DVATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewCell.h; sourceTree = "<group>"; };
+		6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCell.m; sourceTree = "<group>"; };
+		6EA38A631B02506700120FF7 /* DVATableViewCellTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewCellTwo.h; sourceTree = "<group>"; };
+		6EA38A641B02506700120FF7 /* DVATableViewCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCellTwo.m; sourceTree = "<group>"; };
+		6EA38A681B02526F00120FF7 /* DVATestCellModelTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATestCellModelTwo.h; sourceTree = "<group>"; };
+		6EA38A691B02526F00120FF7 /* DVATestCellModelTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATestCellModelTwo.m; sourceTree = "<group>"; };
 		7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		899B2999DC3C354AEFE19E81 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8D98810DB9F6E85440DD2CC7 /* Pods-DVATableViewDatasource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVATableViewDatasource.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVATableViewDatasource/Pods-DVATableViewDatasource.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,8 +155,7 @@
 				6003F5A6195388D20070C39A /* DVAViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				6E70D02E1B01E67200F4E98D /* DVATableViewController.h */,
-				6E70D02F1B01E67200F4E98D /* DVATableViewController.m */,
+				6EA38A5C1B0249B600120FF7 /* Table */,
 			);
 			path = DVATableViewDatasource;
 			sourceTree = "<group>";
@@ -187,6 +198,39 @@
 				F7752A1BF75B4DB2D15CB304 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		6EA38A5C1B0249B600120FF7 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				6E70D02E1B01E67200F4E98D /* DVATableViewController.h */,
+				6E70D02F1B01E67200F4E98D /* DVATableViewController.m */,
+				6EA38A661B02525400120FF7 /* Cell1 */,
+				6EA38A671B02525A00120FF7 /* Cell2 */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		6EA38A661B02525400120FF7 /* Cell1 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA38A5D1B0249D400120FF7 /* DVATestCellModel.h */,
+				6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */,
+				6EA38A601B024B0C00120FF7 /* DVATableViewCell.h */,
+				6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */,
+			);
+			name = Cell1;
+			sourceTree = "<group>";
+		};
+		6EA38A671B02525A00120FF7 /* Cell2 */ = {
+			isa = PBXGroup;
+			children = (
+				6EA38A631B02506700120FF7 /* DVATableViewCellTwo.h */,
+				6EA38A641B02506700120FF7 /* DVATableViewCellTwo.m */,
+				6EA38A681B02526F00120FF7 /* DVATestCellModelTwo.h */,
+				6EA38A691B02526F00120FF7 /* DVATestCellModelTwo.m */,
+			);
+			name = Cell2;
 			sourceTree = "<group>";
 		};
 		CACC4543B6D38DA1157DB32F /* Pods */ = {
@@ -367,8 +411,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DVAAppDelegate.m in Sources */,
+				6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */,
 				6E70D0301B01E67200F4E98D /* DVATableViewController.m in Sources */,
+				6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */,
 				6003F5A7195388D20070C39A /* DVAViewController.m in Sources */,
+				6EA38A651B02506700120FF7 /* DVATableViewCellTwo.m in Sources */,
+				6EA38A6A1B02526F00120FF7 /* DVATestCellModelTwo.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

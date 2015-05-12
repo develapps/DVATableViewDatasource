@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DVATableViewCellModel.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DVATableViewCellModel</TokenIdentifier>
+			<Abstract type="html">The cell model for a tableView</Abstract>
+			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewCellModel/setCellIdentifier:</TokenIdentifier>
+			<Abstract type="html">Identifier for the cell</Abstract>
+			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *cellIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/cellIdentifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewCellModel/cellIdentifier</TokenIdentifier>
+			<Abstract type="html">Identifier for the cell</Abstract>
+			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *cellIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/cellIdentifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DVATableViewCellModel/cellIdentifier</TokenIdentifier>
+			<Abstract type="html">Identifier for the cell</Abstract>
+			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *cellIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/cellIdentifier</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

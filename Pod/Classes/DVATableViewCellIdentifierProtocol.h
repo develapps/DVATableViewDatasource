@@ -16,14 +16,12 @@
  */
 @protocol DVATableViewCellIdentifierProtocol <NSObject>
 /**
- @author Pablo Romeu, 15-05-12 09:05:51
+ @author Pablo Romeu, 15-05-12 16:05:58
  
- Returns the identifier of the cell
+ Identifier for the cell to be used
  
- @return a cell identifier
- @warning this must never return nil
  @since 1.1.0
  */
--(NSString*)dva_identifierForCell;
+@property (nonatomic,strong) NSString*dva_cellIdentifier;
 
 @end

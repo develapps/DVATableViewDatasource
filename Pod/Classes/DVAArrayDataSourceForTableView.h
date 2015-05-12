@@ -11,6 +11,11 @@
 #import <UIKit/UIKit.h>
 #import "DVATableViewModel.h"
 
+#import "DVATableViewCellIdentifierProtocol.h"
+#import "DVATableViewConfigurableCellProtocol.h"
+#import "DVAViewModelDataSourceProtocol.h"
+
+
 static NSString* const kDVATableViewModelSectionHeader  = @"HEADER";
 static NSString* const kDVATableViewModelSectionFooter  = @"FOOTER";
 static NSString* const kDVATableViewModelCellIdentifier = @"CELLID";
@@ -219,6 +224,17 @@ typedef void(^cellBlock)(id item, id cell, NSIndexPath *indexPath);
  @since 1.0
  */
 @property (nonatomic, strong)   UIView      *noDataView;
+
+/**
+ @author Pablo Romeu, 15-05-12 16:05:25
+ 
+ Implements a datasource for the viewModel.
+ 
+ @warning Each viewModel must implement DVATableViewConfigurableCellProtocol and each cell must implement DVATableViewCellIdentifierProtocol
+ 
+ @since 1.1.0
+ */
+@property (nonatomic, weak) id <DVAViewModelDataSourceProtocol> viewModelDataSource;
 
 #pragma mark - Cell identifier and configuration registering
 

@@ -8,10 +8,15 @@
 
 #import "DVATableViewController.h"
 #import <DVAArrayDataSourceForTableView.h>
+#import <NSDictionary+DVAViewModelDatasource.h>
+#import "DVATestCellModel.h"
+#import "DVATestCellModelTwo.h"
+#import "DVATableViewCell.h"
+#import "DVATableViewCellTwo.h"
 
 @interface DVATableViewController ()
 @property (nonatomic,strong) DVAArrayDataSourceForTableView *datasource;
-@property (nonatomic,strong) DVATableViewControllerModel    *viewModel;
+@property (nonatomic,strong) NSDictionary                   *viewModelManager;
 @end
 
 @implementation DVATableViewController
@@ -26,30 +31,53 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewDidAppear:(BOOL)animated{
-    self.viewModel=[DVATableViewControllerModel new];
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    _viewModelManager=[NSDictionary new];
+    NSArray*tmp=[NSArray new];
+    for (int i=0; i<10; i++) {
+        if (i%2==0) {
+            DVATestCellModel*cm=[DVATestCellModel new];
+            cm.title=[NSString stringWithFormat:@"Cell %i",i];
+            cm.dva_cellIdentifier=[DVATableViewCell description];
+            tmp=[tmp arrayByAddingObject:cm];
+        }
+        else{
+            DVATestCellModelTwo*cm=[DVATestCellModelTwo new];
+            cm.title=[NSString stringWithFormat:@"Two %i",i];
+            cm.dva_cellIdentifier=[DVATableViewCellTwo description];
+            tmp=[tmp arrayByAddingObject:cm];
+        }
+    }
+    NSArray*tmp2=[NSArray new];
+    for (int i=0; i<1000; i++) {
+        if (i%2==0) {
+            DVATestCellModel*cm=[DVATestCellModel new];
+            cm.title=[NSString stringWithFormat:@"Cell %i",i];
+            cm.dva_cellIdentifier=[DVATableViewCell description];
+            tmp2=[tmp2 arrayByAddingObject:cm];
+        }
+        else{
+            DVATestCellModelTwo*cm=[DVATestCellModelTwo new];
+            cm.title=[NSString stringWithFormat:@"Two %i",i];
+            cm.dva_cellIdentifier=[DVATableViewCellTwo description];
+            tmp2=[tmp2 arrayByAddingObject:cm];
+        }
+
+    }
+
+    _viewModelManager=@{@(0):tmp,
+                        @(1):tmp2};
+    _datasource.viewModelDataSource=_viewModelManager;
+    [_datasource setTitleHeader:@"seccion 1" ForSection:0];
 }
 
 #pragma mark - Table view data source
 
 -(void)setupDataSource{
-    self.datasource=[DVAArrayDataSourceForTableView new];
-    [self.datasource registercellIdentifier:@"Cell" cellConfiguration:^(id item, id cell, NSIndexPath *indexPath) {
-        // Any configuration code you need.
-    }];
+    _datasource=[DVAArrayDataSourceForTableView new];
+    self.tableView.dataSource=_datasource;
 }
 
 @end
 
-@implementation DVATableViewControllerModel
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        <#statements#>
-    }
-    return self;
-}
-
-@end

@@ -174,6 +174,9 @@
 #pragma mark - datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if (self.viewModelDataSource) {
+        return [self.viewModelDataSource numberOfSectionsInViewModel];
+    }
     if ([[self.itemsPerSection allKeys] count]>0) {
         [tableView.backgroundView removeFromSuperview];
         tableView.backgroundView = nil;
@@ -186,27 +189,45 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (self.viewModelDataSource) {
+        return [self.viewModelDataSource numberOfViewModelsInSection:section];
+    }
     return [[self itemsAtSection:section] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    id item = [self itemAtIndexPath:indexPath];
-    NSAssert(item, @"ERROR %@: Trying to setup a cell with no model at indexPath %@",[self class],indexPath);
-    
-    NSString*identifier=[self identifierAtIndexPath:indexPath];
-    NSAssert(identifier, @"ERROR %@: Trying to setup a cell with no identifier at indexPath %@",[self class],indexPath);
-    
-    cellBlock block=[self.configurationBlocks objectForKey:identifier];
-    NSAssert(block, @"ERROR %@: Trying to setup a cell with no block configuration at indexPath %@",[self class],indexPath);
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    NSAssert(cell, @"ERROR %@: No cell dequeued at indexPath %@",[self class],indexPath);
+    if (self.viewModelDataSource) {
+        id <DVATableViewCellIdentifierProtocol> viewModel = [self.viewModelDataSource viewModelForRowAtIndexPath:indexPath];
+        
+        NSAssert([viewModel respondsToSelector:@selector(dva_cellIdentifier)], @"ERROR %@: Trying to setup a cell with model that does not conform DVATableViewCellIdentifierProtocol at indexPath %@",[self class],indexPath);
+        
+        NSString*identifier=viewModel.dva_cellIdentifier;
+        
+        UITableViewCell <DVATableViewConfigurableCellProtocol> *cell=[tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+        NSAssert([cell respondsToSelector:@selector(setViewModel:)], @"ERROR %@: Trying to setup a cell that does not conform DVATableViewConfigurableCellProtocol at indexPath %@",[self class],indexPath);
 
-    block(item, cell, indexPath);
-    if (self.debug) NSLog(@"DEBUG %@: Returning configured cell %@ at indexPath %@",[self class],identifier,indexPath);
-
-    return cell;
+        [cell setViewModel:viewModel];
+        
+        return cell;
+    }
+    else{
+        id item = [self itemAtIndexPath:indexPath];
+        NSAssert(item, @"ERROR %@: Trying to setup a cell with no model at indexPath %@",[self class],indexPath);
+        
+        NSString*identifier=[self identifierAtIndexPath:indexPath];
+        NSAssert(identifier, @"ERROR %@: Trying to setup a cell with no identifier at indexPath %@",[self class],indexPath);
+        
+        cellBlock block=[self.configurationBlocks objectForKey:identifier];
+        NSAssert(block, @"ERROR %@: Trying to setup a cell with no block configuration at indexPath %@",[self class],indexPath);
+        
+        UITableViewCell*cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+        NSAssert(cell, @"ERROR %@: No cell dequeued at indexPath %@",[self class],indexPath);
+        
+        block(item, cell, indexPath);
+        if (self.debug) NSLog(@"DEBUG %@: Returning configured cell %@ at indexPath %@",[self class],identifier,indexPath);
+        
+        return cell;
+    }
 }
 
 #pragma mark - Datasource headers and footers

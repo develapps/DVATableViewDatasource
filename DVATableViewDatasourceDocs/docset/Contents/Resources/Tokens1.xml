@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DVAArrayDataSourceForTableView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DVAArrayDataSourceForTableView</TokenIdentifier>
+			<Abstract type="html">This class implements the tableView datasource to configure cells outside the cells, so the cells do not know anything about the model.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/initWithTableView:andModel:</TokenIdentifier>
+			<Abstract type="html">This method registers the NIBs at the tableView, setups the configuration blocks and prepares the datasource. After that, call reloadData.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithTableView:(UITableView *)tableView andModel:(DVATableViewModel *)model</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">the tableView</Abstract>
+				</Parameter><Parameter>
+					<Name>model</Name>
+					<Abstract type="html">the viewModel</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a datasource</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTableView:andModel:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setDebug:</TokenIdentifier>
+			<Abstract type="html">Enable debugging. Default is NO.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL debug</Declaration>
+			
+			
+			<Anchor>//api/name/debug</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/debug</TokenIdentifier>
+			<Abstract type="html">Enable debugging. Default is NO.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL debug</Declaration>
+			
+			
+			<Anchor>//api/name/debug</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DVAArrayDataSourceForTableView/debug</TokenIdentifier>
+			<Abstract type="html">Enable debugging. Default is NO.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL debug</Declaration>
+			
+			
+			<Anchor>//api/name/debug</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setNoDataView:</TokenIdentifier>
+			<Abstract type="html">No data view. Setup if a no data.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView *noDataView</Declaration>
+			
+			
+			<Anchor>//api/name/noDataView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/noDataView</TokenIdentifier>
+			<Abstract type="html">No data view. Setup if a no data.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView *noDataView</Declaration>
+			
+			
+			<Anchor>//api/name/noDataView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DVAArrayDataSourceForTableView/noDataView</TokenIdentifier>
+			<Abstract type="html">No data view. Setup if a no data.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView *noDataView</Declaration>
+			
+			
+			<Anchor>//api/name/noDataView</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/registercellIdentifier:cellConfiguration:</TokenIdentifier>
+			<Abstract type="html">This method registers a configuration block for a cell identifier. No NIB is registered here</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)registercellIdentifier:(NSString *)cellIdentifier cellConfiguration:(cellBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cellIdentifier</Name>
+					<Abstract type="html">the cell identifier</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">the cell block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registercellIdentifier:cellConfiguration:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/registerNibAtTableView:andCellIdentifier:cellConfiguration:</TokenIdentifier>
+			<Abstract type="html">This method registers the nib, the cell identifier and the configuration block, all in once.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/registercellIdentifier:cellConfiguration:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/registerNibAtTableView:andCellClass:cellConfiguration:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)registerNibAtTableView:(UITableView *)tableView andCellIdentifier:(NSString *)cellIdentifier cellConfiguration:(cellBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">the tableView to register to</Abstract>
+				</Parameter><Parameter>
+					<Name>cellIdentifier</Name>
+					<Abstract type="html">the cell identifier</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">the block</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerNibAtTableView:andCellIdentifier:cellConfiguration:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/registerNibAtTableView:andCellClass:cellConfiguration:</TokenIdentifier>
+			<Abstract type="html">This method registers the nib, the cell class and the configuration block, all in once.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/registercellIdentifier:cellConfiguration:</TokenIdentifier>
+		<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/registerNibAtTableView:andCellIdentifier:cellConfiguration:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)registerNibAtTableView:(UITableView *)tableView andCellClass:(Class)cellClass cellConfiguration:(cellBlock)block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableView</Name>
+					<Abstract type="html">the tableview to register to</Abstract>
+				</Parameter><Parameter>
+					<Name>cellClass</Name>
+					<Abstract type="html">the cell class</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">the block</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/registerNibAtTableView:andCellClass:cellConfiguration:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/items</TokenIdentifier>
+			<Abstract type="html">Returns the items for the first section.</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)items</Declaration>
+			
+			<ReturnValue><Abstract type="html">the model items</Abstract></ReturnValue>
+			<Anchor>//api/name/items</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setItems:</TokenIdentifier>
+			<Abstract type="html">Setups a simple tableview with just one section, an identifier and these items. Useful if it is a simple tableView with just one section and identifier</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setItems:withCellIdentifiers:perSection:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setItems:(NSArray *)items</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>items</Name>
+					<Abstract type="html">the items to configure the cells</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setItems:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setItems:withCellIdentifiers:perSection:</TokenIdentifier>
+			<Abstract type="html">Setups a section of a tableView</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)setItems:(NSArray *)items withCellIdentifiers:(NSArray *)identifiers perSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>items</Name>
+					<Abstract type="html">items to configure the cells</Abstract>
+				</Parameter><Parameter>
+					<Name>identifiers</Name>
+					<Abstract type="html">the cell identifiers for each cell</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">the section</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setItems:withCellIdentifiers:perSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setItems:withCellIdentifier:perSection:</TokenIdentifier>
+			<Abstract type="html">Helper to simplify the cellIdentifier selection</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setItems:withCellIdentifiers:perSection:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)setItems:(NSArray *)items withCellIdentifier:(NSString *)identifier perSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>items</Name>
+					<Abstract type="html">the items</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">the Section</Abstract>
+				</Parameter><Parameter>
+					<Name>identifiers</Name>
+					<Abstract type="html">the identifier</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setItems:withCellIdentifier:perSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setTableViewModel:</TokenIdentifier>
+			<Abstract type="html">Sets a full tableViewModel</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)setTableViewModel:(DVATableViewModel *)tableViewModel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tableViewModel</Name>
+					<Abstract type="html">the model</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTableViewModel:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setTableViewArray:</TokenIdentifier>
+			<Abstract type="html">Setup with a simple array</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)setTableViewArray:(NSArray *)array</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>array</Name>
+					<Abstract type="html">the array</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTableViewArray:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setTitleFooter:ForSection:</TokenIdentifier>
+			<Abstract type="html">Sets a title text for a section footer</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)setTitleFooter:(NSString *)footer ForSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>footer</Name>
+					<Abstract type="html">the footer</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">the section</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTitleFooter:ForSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAArrayDataSourceForTableView/setTitleHeader:ForSection:</TokenIdentifier>
+			<Abstract type="html">Sets a title text for a section header</Abstract>
+			<DeclaredIn>DVAArrayDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)setTitleHeader:(NSString *)header ForSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">the header</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">the section</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTitleHeader:ForSection:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DVATableViewCellIdentifierProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DVATableViewCellIdentifierProtocol</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 09:05:34</Abstract>
+			<DeclaredIn>DVATableViewCellIdentifierProtocol.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DVATableViewCellIdentifierProtocol/setDva_cellIdentifier:</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:58</Abstract>
+			<DeclaredIn>DVATableViewCellIdentifierProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *dva_cellIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/dva_cellIdentifier</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DVATableViewCellIdentifierProtocol/dva_cellIdentifier</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:58</Abstract>
+			<DeclaredIn>DVATableViewCellIdentifierProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *dva_cellIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/dva_cellIdentifier</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfp/DVATableViewCellIdentifierProtocol/dva_cellIdentifier</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:58</Abstract>
+			<DeclaredIn>DVATableViewCellIdentifierProtocol.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *dva_cellIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/dva_cellIdentifier</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>
