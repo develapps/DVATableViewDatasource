@@ -13,7 +13,7 @@
 #import "DVATableViewModelDatasource.h"
 #import "DVATableViewModelProtocol.h"
 #import "DVATableViewCellProtocol.h"
-
+#import "DVATableViewModelDatasourceDelegate.h"
 
 /**
  This class implements the tableView datasource to configure cells outside the cells, so the cells do not know anything about the model. It uses a viewModel datasource to ensure performance and memory containment

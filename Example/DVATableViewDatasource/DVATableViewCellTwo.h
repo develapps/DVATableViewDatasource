@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <DVATableViewCellProtocol.h>
+#import "DVATableViewActionDelegate.h"
 
-@interface DVATableViewCellTwo : UITableViewCell <DVATableViewCellProtocol>
-@property (weak, nonatomic) IBOutlet UILabel *theLabel;
-
+@interface DVATableViewCellTwo : UITableViewCell 
+@property (nonatomic,weak) id <DVATableViewActionDelegate> delegate;
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @protocol DVATableViewModelProtocol;
+@protocol DVATableViewModelDatasourceDelegate;
+
 
 /**
  @author Pablo Romeu, 15-05-12 16:05:15
@@ -53,5 +56,15 @@
  @since 1.1.0
  */
 - (id<DVATableViewModelProtocol>)dva_viewModelForRowAtIndexPath:(NSIndexPath *)indexPath;
+
+@optional
+/**
+ @author Pablo Romeu, 15-05-13 13:05:34
+ 
+ A Datasource delegate, if needed
+ 
+ @since 1.2.0
+ */
+@property (nonatomic,weak) id <DVATableViewModelDatasourceDelegate> delegate;
 
 @end

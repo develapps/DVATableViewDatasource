@@ -9,12 +9,22 @@
 #import "DVATableViewCellTwo.h"
 #import "DVATestCellModel.h"
 
+@interface DVATableViewCellTwo () <DVATableViewCellProtocol>
+@property (weak, nonatomic) IBOutlet UILabel *theLabel;
+-(IBAction)switched:(UISwitch*)sender;
+
+@end
+
 @implementation DVATableViewCellTwo
 
 -(void)bindWithModel:(id)viewModel{
     DVATestCellModel*model=viewModel;
     [self.theLabel setText:model.title];
     [self.contentView setBackgroundColor:[UIColor blueColor]];
+}
+
+-(IBAction)switched:(UISwitch*)sender{
+    [self.delegate switchDidSwitch:sender];
 }
 
 @end

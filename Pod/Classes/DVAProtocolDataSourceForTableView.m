@@ -51,7 +51,20 @@
     UITableViewCell <DVATableViewCellProtocol> *cell=[tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     NSAssert([cell respondsToSelector:@selector(bindWithModel:)], @"ERROR %@: Trying to setup a cell that does not conform DVATableViewCellProtocol at indexPath %@",[self class],indexPath);
     
+    if ([self.viewModelDataSource respondsToSelector:@selector(delegate)]  &&
+        [self.viewModelDataSource.delegate respondsToSelector:@selector(dataSource:preBindCell:atIndexPath:)]){
+        if (self.debug) NSLog(@"DEBUG %@: Prebinding cell %@ at indexpath (%@)",[self class],cell,indexPath);
+        [self.viewModelDataSource.delegate dataSource:self.viewModelDataSource preBindCell:cell atIndexPath:indexPath];
+    }
+    
     [cell bindWithModel:viewModel];
+    
+    if ([self.viewModelDataSource respondsToSelector:@selector(delegate)] &&
+        [self.viewModelDataSource.delegate respondsToSelector:@selector(dataSource:postBindCell:atIndexPath:)]){
+        if (self.debug) NSLog(@"DEBUG %@: Postbinding cell %@ at indexpath (%@)",[self class],cell,indexPath);
+        [self.viewModelDataSource.delegate dataSource:self.viewModelDataSource postBindCell:cell atIndexPath:indexPath];
+    }
+    
     if (self.debug) NSLog(@"DEBUG %@: Returning configured cell %@ with viewModel %@ for indexpath (%@)",[self class],cell,viewModel,indexPath);
 
     return cell;

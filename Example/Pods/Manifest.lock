@@ -1,5 +1,5 @@
 PODS:
-  - DVATableViewDatasource (1.1.0)
+  - DVATableViewDatasource (1.2.0)
 
 DEPENDENCIES:
   - DVATableViewDatasource (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DVATableViewDatasource: e2187a0fc4ff2a414b7cdac42315353d3a9c78de
+  DVATableViewDatasource: 2ce99278428b51bfea6fb86452393f8e22188d55
 
 COCOAPODS: 0.37.1

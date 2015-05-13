@@ -66,6 +66,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		67B99DC11BC53A6F7961E34E /* Pods-DVATableViewDatasource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVATableViewDatasource.release.xcconfig"; path = "Pods/Target Support Files/Pods-DVATableViewDatasource/Pods-DVATableViewDatasource.release.xcconfig"; sourceTree = "<group>"; };
+		6E64E7B61B03708D003B0080 /* DVATableViewActionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVATableViewActionDelegate.h; sourceTree = "<group>"; };
 		6E70D02E1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewDatasourceNSDictionaryController.h; sourceTree = "<group>"; };
 		6E70D02F1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewDatasourceNSDictionaryController.m; sourceTree = "<group>"; };
 		6EA38A5D1B0249D400120FF7 /* DVATestCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATestCellModel.h; sourceTree = "<group>"; };
@@ -200,6 +201,14 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		6E64E7B51B03707E003B0080 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6E64E7B61B03708D003B0080 /* DVATableViewActionDelegate.h */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 		6EA38A5C1B0249B600120FF7 /* With two sections - NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +278,7 @@
 		6EDC0E781B03485600CF031D /* Cells and Models */ = {
 			isa = PBXGroup;
 			children = (
+				6E64E7B51B03707E003B0080 /* Delegate */,
 				6EA38A661B02525400120FF7 /* Cell1 */,
 				6EA38A671B02525A00120FF7 /* Cell2 */,
 			);
