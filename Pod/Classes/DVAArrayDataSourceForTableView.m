@@ -197,7 +197,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (self.viewModelDataSource) {
-        id <DVATableViewCellIdentifierProtocol> viewModel = [self.viewModelDataSource viewModelForRowAtIndexPath:indexPath];
+        id <DVATableViewModelCellDelegate> viewModel = [self.viewModelDataSource viewModelForRowAtIndexPath:indexPath];
         
         NSAssert([viewModel respondsToSelector:@selector(dva_cellIdentifier)], @"ERROR %@: Trying to setup a cell with model that does not conform DVATableViewCellIdentifierProtocol at indexPath %@",[self class],indexPath);
         
