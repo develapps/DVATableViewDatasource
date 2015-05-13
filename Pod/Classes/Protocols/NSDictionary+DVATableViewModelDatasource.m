@@ -7,7 +7,6 @@
 //
 
 #import "NSDictionary+DVATableViewModelDatasource.h"
-#import <objc/runtime.h>
 
 
 @implementation NSDictionary (DVATableViewModelDatasource)
@@ -42,12 +41,5 @@
     return nil;
 }
 
--(id<DVATableViewModelDatasourceDelegate>)delegate{
-    return objc_getAssociatedObject(self, @selector(delegate));
-}
-
--(void)setDelegate:(id<DVATableViewModelDatasourceDelegate>)delegate{
-    objc_setAssociatedObject(self, @selector(delegate), delegate, OBJC_ASSOCIATION_ASSIGN);
-}
 
 @end
