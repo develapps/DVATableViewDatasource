@@ -15,17 +15,30 @@
 						<NodeRef refid="2"/>
 						<NodeRef refid="3"/>
 						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
 						
 					</Subnodes>
 				</Node>
 				
+				
+				<Node>
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						
+					</Subnodes>
+				</Node>
 				
                 
 				<Node>
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="5"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
 						
 					</Subnodes>
 				</Node>
@@ -36,7 +49,7 @@
                     <Name>Blocks</Name>
                     <Path>index.html</Path>
                     <Subnodes>
-                        <NodeRef refid="6"/>
+                        <NodeRef refid="11"/>
                         
                     </Subnodes>
                 </Node>
@@ -80,6 +93,39 @@
             
         </Node>
 		<Node id="2" type="file" documentType="reference">
+            <Name>DVAProtocolDataSourceForTableView</Name>
+            <Path>Classes/DVAProtocolDataSourceForTableView.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/DVAProtocolDataSourceForTableView.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/DVAProtocolDataSourceForTableView.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/DVAProtocolDataSourceForTableView.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/DVAProtocolDataSourceForTableView.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
             <Name>DVATableViewCellModel</Name>
             <Path>Classes/DVATableViewCellModel.html</Path>
             
@@ -106,7 +152,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="3" type="file" documentType="reference">
+		<Node id="4" type="file" documentType="reference">
             <Name>DVATableViewModel</Name>
             <Path>Classes/DVATableViewModel.html</Path>
             
@@ -139,7 +185,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="4" type="file" documentType="reference">
+		<Node id="5" type="file" documentType="reference">
             <Name>DVATableViewSectionModel</Name>
             <Path>Classes/DVATableViewSectionModel.html</Path>
             
@@ -173,37 +219,101 @@
             
         </Node>
 		
+		<Node id="6" type="file" documentType="reference">
+            <Name>NSArray(DVATableViewModelDatasource)</Name>
+            <Path>Categories/NSArray+DVATableViewModelDatasource.html</Path>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>NSDictionary(DVATableViewModelDatasource)</Name>
+            <Path>Categories/NSDictionary+DVATableViewModelDatasource.html</Path>
+            
+        </Node>
 		
-        <Node id="5" type="file" documentType="reference">
-            <Name>DVATableViewCellIdentifierProtocol</Name>
-            <Path>Protocols/DVATableViewCellIdentifierProtocol.html</Path>
+        <Node id="8" type="file" documentType="reference">
+            <Name>DVATableViewCellProtocol</Name>
+            <Path>Protocols/DVATableViewCellProtocol.html</Path>
             
                 <Subnodes>
                 <Node type="section">
-                    <Path>Protocols/DVATableViewCellIdentifierProtocol.html</Path>
+                    <Path>Protocols/DVATableViewCellProtocol.html</Path>
                     <Name>Overview</Name>
                     <Anchor>overview</Anchor>
                 </Node>
                 <Node type="section">
-                    <Path>Protocols/DVATableViewCellIdentifierProtocol.html</Path>
+                    <Path>Protocols/DVATableViewCellProtocol.html</Path>
                     <Name>Tasks</Name>
                     <Anchor>tasks</Anchor>
                 </Node>
                 
+                
+                
                 <Node type="section">
-                    <Path>Protocols/DVATableViewCellIdentifierProtocol.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
+                    <Path>Protocols/DVATableViewCellProtocol.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>DVATableViewModelDatasource</Name>
+            <Path>Protocols/DVATableViewModelDatasource.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/DVATableViewModelDatasource.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/DVATableViewModelDatasource.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
                 </Node>
                 
                 
+                
+                <Node type="section">
+                    <Path>Protocols/DVATableViewModelDatasource.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>DVATableViewModelProtocol</Name>
+            <Path>Protocols/DVATableViewModelProtocol.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/DVATableViewModelProtocol.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/DVATableViewModelProtocol.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/DVATableViewModelProtocol.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
                 
             </Subnodes>
             
         </Node>
 		
         
-        <Node id="6" type="file" documentType="reference">
+        <Node id="11" type="file" documentType="reference">
             <Name>cellBlock</Name>
             <Path>Blocks/cellBlock.html</Path>
             

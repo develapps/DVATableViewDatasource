@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/DVATableViewSectionModel.html">
+	<File path="Classes/DVATableViewModel.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/DVATableViewSectionModel</TokenIdentifier>
-			<Abstract type="html">General datasource model for a section</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/DVATableViewModel</TokenIdentifier>
+			<Abstract type="html">Implementation for a tableView model</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
             <Availability type="html"></Availability>
 			
 			<NodeRef refid="4"/>
@@ -13,147 +13,111 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/setCells:</TokenIdentifier>
-			<Abstract type="html">The cells for the section</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewModel/setSections:</TokenIdentifier>
+			<Abstract type="html">The sections for the tableView</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NSArray *cells</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *sections</Declaration>
 			
 			
-			<Anchor>//api/name/cells</Anchor>
+			<Anchor>//api/name/sections</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/cells</TokenIdentifier>
-			<Abstract type="html">The cells for the section</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewModel/sections</TokenIdentifier>
+			<Abstract type="html">The sections for the tableView</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NSArray *cells</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *sections</Declaration>
 			
 			
-			<Anchor>//api/name/cells</Anchor>
+			<Anchor>//api/name/sections</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/DVATableViewSectionModel/cells</TokenIdentifier>
-			<Abstract type="html">The cells for the section</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/DVATableViewModel/sections</TokenIdentifier>
+			<Abstract type="html">The sections for the tableView</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, copy) NSArray *cells</Declaration>
+			<Declaration>@property (nonatomic, strong) NSArray *sections</Declaration>
 			
 			
-			<Anchor>//api/name/cells</Anchor>
+			<Anchor>//api/name/sections</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/setSectionTitleHeader:</TokenIdentifier>
-			<Abstract type="html">A section title if needed</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewModel/setCellConfigurationBlocks:</TokenIdentifier>
+			<Abstract type="html">Setup cells blocks with identifiers. These identifiers are used for the cells and the xibs</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *sectionTitleHeader</Declaration>
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *cellConfigurationBlocks</Declaration>
 			
 			
-			<Anchor>//api/name/sectionTitleHeader</Anchor>
+			<Anchor>//api/name/cellConfigurationBlocks</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/sectionTitleHeader</TokenIdentifier>
-			<Abstract type="html">A section title if needed</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewModel/cellConfigurationBlocks</TokenIdentifier>
+			<Abstract type="html">Setup cells blocks with identifiers. These identifiers are used for the cells and the xibs</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *sectionTitleHeader</Declaration>
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *cellConfigurationBlocks</Declaration>
 			
 			
-			<Anchor>//api/name/sectionTitleHeader</Anchor>
+			<Anchor>//api/name/cellConfigurationBlocks</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/DVATableViewSectionModel/sectionTitleHeader</TokenIdentifier>
-			<Abstract type="html">A section title if needed</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/DVATableViewModel/cellConfigurationBlocks</TokenIdentifier>
+			<Abstract type="html">Setup cells blocks with identifiers. These identifiers are used for the cells and the xibs</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *sectionTitleHeader</Declaration>
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *cellConfigurationBlocks</Declaration>
 			
 			
-			<Anchor>//api/name/sectionTitleHeader</Anchor>
+			<Anchor>//api/name/cellConfigurationBlocks</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/setSectionTitleFooter:</TokenIdentifier>
-			<Abstract type="html">A section footer if needed</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewModel/cellModelForIndexPath:</TokenIdentifier>
+			<Abstract type="html">Returns a cell at the specified indexPath</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *sectionTitleFooter</Declaration>
-			
-			
-			<Anchor>//api/name/sectionTitleFooter</Anchor>
+			<Declaration>- (DVATableViewCellModel *)cellModelForIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">the indexPath</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a cell model</Abstract></ReturnValue>
+			<Anchor>//api/name/cellModelForIndexPath:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/sectionTitleFooter</TokenIdentifier>
-			<Abstract type="html">A section footer if needed</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewModel/setCellModel:forIndexPath:</TokenIdentifier>
+			<Abstract type="html">Sets a cell at a specified indexPath</Abstract>
+			<DeclaredIn>DVATableViewModel.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *sectionTitleFooter</Declaration>
-			
-			
-			<Anchor>//api/name/sectionTitleFooter</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/DVATableViewSectionModel/sectionTitleFooter</TokenIdentifier>
-			<Abstract type="html">A section footer if needed</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *sectionTitleFooter</Declaration>
-			
-			
-			<Anchor>//api/name/sectionTitleFooter</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/setCell:atIndex:</TokenIdentifier>
-			<Abstract type="html">Sets a cell for an index</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
-			
-			<Declaration>- (void)setCell:(DVATableViewCellModel *)cell atIndex:(NSInteger)index</Declaration>
+			<Declaration>- (void)setCellModel:(DVATableViewCellModel *)cell forIndexPath:(NSIndexPath *)indexPath</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>cell</Name>
-					<Abstract type="html">the cell model</Abstract>
+					<Abstract type="html">the cell</Abstract>
 				</Parameter><Parameter>
-					<Name>index</Name>
-					<Abstract type="html">the index</Abstract>
+					<Name>indexPath</Name>
+					<Abstract type="html">the indexPath</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setCell:atIndex:</Anchor>
-            <NodeRef refid="4"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewSectionModel/cellAtIndex:</TokenIdentifier>
-			<Abstract type="html">Retrieves a cell at an index</Abstract>
-			<DeclaredIn>DVATableViewSectionModel.h</DeclaredIn>
-			
-			<Declaration>- (DVATableViewCellModel *)cellAtIndex:(NSInteger)index</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>index</Name>
-					<Abstract type="html">the index</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">the cell model</Abstract></ReturnValue>
-			<Anchor>//api/name/cellAtIndex:</Anchor>
+			<Anchor>//api/name/setCellModel:forIndexPath:</Anchor>
             <NodeRef refid="4"/>
 		</Token>
 		

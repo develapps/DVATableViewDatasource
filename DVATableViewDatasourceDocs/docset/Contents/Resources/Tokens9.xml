@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DVATableViewModelDatasource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DVATableViewModelDatasource</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:15</Abstract>
+			<DeclaredIn>DVATableViewModelDatasource.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DVATableViewModelDatasource/dva_numberOfSectionsInViewModel</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:32</Abstract>
+			<DeclaredIn>DVATableViewModelDatasource.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)dva_numberOfSectionsInViewModel</Declaration>
+			
+			<ReturnValue><Abstract type="html">a number of sections for the tableView</Abstract></ReturnValue>
+			<Anchor>//api/name/dva_numberOfSectionsInViewModel</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DVATableViewModelDatasource/dva_numberOfViewModelsInSection:</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:07</Abstract>
+			<DeclaredIn>DVATableViewModelDatasource.h</DeclaredIn>
+			
+			<Declaration>- (NSInteger)dva_numberOfViewModelsInSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>section</Name>
+					<Abstract type="html">the section</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">a number of viewModel (cells)</Abstract></ReturnValue>
+			<Anchor>//api/name/dva_numberOfViewModelsInSection:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DVATableViewModelDatasource/dva_viewModelForRowAtIndexPath:</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:11</Abstract>
+			<DeclaredIn>DVATableViewModelDatasource.h</DeclaredIn>
+			
+			<Declaration>- (id&lt;DVATableViewModelProtocol&gt;)dva_viewModelForRowAtIndexPath:(NSIndexPath *)indexPath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>indexPath</Name>
+					<Abstract type="html">the indexPath</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the viewModel to be set</Abstract></ReturnValue>
+			<Anchor>//api/name/dva_viewModelForRowAtIndexPath:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

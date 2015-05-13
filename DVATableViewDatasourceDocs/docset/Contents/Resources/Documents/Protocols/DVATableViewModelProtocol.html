@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>DVATableViewCellModel Class Reference</title>
+	<title>DVATableViewModelProtocol Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -54,15 +54,15 @@
 
 	
 	
-	<optgroup label="Properties">
+
+	
+
+	
+	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/cellIdentifier">cellIdentifier</option>
+		<option value="//api/name/dva_cellIdentifier">- dva_cellIdentifier</option>
 		
 	</optgroup>
-	
-
-	
-
 	
 	
 </select>
@@ -77,16 +77,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">DVATableViewCellModel Class Reference</h1>
+					<h1 class="title">DVATableViewModelProtocol Protocol Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Inherits from</th>
+	<th>Conforms to</th>
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>DVATableViewCellModel.h</td>
+	<td>DVATableViewModelProtocol.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -96,7 +96,9 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The cell model for a tableView</p>
+						<p>@author Pablo Romeu, 15-05-12 09:05:34</p>
+
+<p>This protocol states a method returned by an viewModel object that can respond to the type of cell needed by <a href="../Classes/DVAArrayDataSourceForTableView.html"><code>DVAArrayDataSourceForTableView</code></a>.</p>
 					</div>
 					
 					
@@ -112,9 +114,9 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/cellIdentifier" title="cellIdentifier"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cellIdentifier">&nbsp;&nbsp;cellIdentifier</a></code>
-</h3>
+	<a name="//api/name/dva_cellIdentifier" title="dva_cellIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dva_cellIdentifier">&ndash;&nbsp;dva_cellIdentifier</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -123,12 +125,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Identifier for the cell</p>
+				<p>@author Pablo Romeu, 15-05-12 16:05:58</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *cellIdentifier</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSString *)dva_cellIdentifier</code></div>
 
 		    
 			
@@ -138,10 +140,15 @@
 			
 			<div class="method-subsection availability">
 				<h4 class="method-subtitle parameter-title">Availability</h4>
-				<p>1.0</p>
+				<p>1.1.0</p>
 			</div>
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Identifier for the cell to be used</p>
+			</div>
 			
 
 			
@@ -151,7 +158,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">DVATableViewCellModel.h</code></p>
+				<p><code class="declared-in-ref">DVATableViewModelProtocol.h</code></p>
 			</div>
 			
 			

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DVATableViewModelProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DVATableViewModelProtocol</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 09:05:34</Abstract>
+			<DeclaredIn>DVATableViewModelProtocol.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DVATableViewModelProtocol/dva_cellIdentifier</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:58</Abstract>
+			<DeclaredIn>DVATableViewModelProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)dva_cellIdentifier</Declaration>
+			
+			
+			<Anchor>//api/name/dva_cellIdentifier</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/DVATableViewCellModel.html">
+	<File path="Classes/DVAProtocolDataSourceForTableView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/DVATableViewCellModel</TokenIdentifier>
-			<Abstract type="html">The cell model for a tableView</Abstract>
-			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/DVAProtocolDataSourceForTableView</TokenIdentifier>
+			<Abstract type="html">This class implements the tableView datasource to configure cells outside the cells, so the cells do not know anything about the model. It uses a viewModel datasource to ensure performance and memory containment</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
             <Availability type="html"></Availability>
 			
 			<NodeRef refid="2"/>
@@ -13,38 +13,114 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewCellModel/setCellIdentifier:</TokenIdentifier>
-			<Abstract type="html">Identifier for the cell</Abstract>
-			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAProtocolDataSourceForTableView/setViewModelDataSource:</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:25</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *cellIdentifier</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;DVATableViewModelDatasource&gt; viewModelDataSource</Declaration>
 			
 			
-			<Anchor>//api/name/cellIdentifier</Anchor>
+			<Anchor>//api/name/viewModelDataSource</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/DVATableViewCellModel/cellIdentifier</TokenIdentifier>
-			<Abstract type="html">Identifier for the cell</Abstract>
-			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAProtocolDataSourceForTableView/viewModelDataSource</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:25</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *cellIdentifier</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;DVATableViewModelDatasource&gt; viewModelDataSource</Declaration>
 			
 			
-			<Anchor>//api/name/cellIdentifier</Anchor>
+			<Anchor>//api/name/viewModelDataSource</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/DVATableViewCellModel/cellIdentifier</TokenIdentifier>
-			<Abstract type="html">Identifier for the cell</Abstract>
-			<DeclaredIn>DVATableViewCellModel.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/DVAProtocolDataSourceForTableView/viewModelDataSource</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:25</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, strong) NSString *cellIdentifier</Declaration>
+			<Declaration>@property (nonatomic, weak) id&lt;DVATableViewModelDatasource&gt; viewModelDataSource</Declaration>
 			
 			
-			<Anchor>//api/name/cellIdentifier</Anchor>
+			<Anchor>//api/name/viewModelDataSource</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAProtocolDataSourceForTableView/setNoDataView:</TokenIdentifier>
+			<Abstract type="html">No data view. Can be setup to be returned if no data is shown.</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView *noDataView</Declaration>
+			
+			
+			<Anchor>//api/name/noDataView</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAProtocolDataSourceForTableView/noDataView</TokenIdentifier>
+			<Abstract type="html">No data view. Can be setup to be returned if no data is shown.</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView *noDataView</Declaration>
+			
+			
+			<Anchor>//api/name/noDataView</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/DVAProtocolDataSourceForTableView/noDataView</TokenIdentifier>
+			<Abstract type="html">No data view. Can be setup to be returned if no data is shown.</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIView *noDataView</Declaration>
+			
+			
+			<Anchor>//api/name/noDataView</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAProtocolDataSourceForTableView/setTitleFooter:ForSection:</TokenIdentifier>
+			<Abstract type="html">Sets a title text for a section footer</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)setTitleFooter:(NSString *)footer ForSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>footer</Name>
+					<Abstract type="html">the footer</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">the section</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTitleFooter:ForSection:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DVAProtocolDataSourceForTableView/setTitleHeader:ForSection:</TokenIdentifier>
+			<Abstract type="html">Sets a title text for a section header</Abstract>
+			<DeclaredIn>DVAProtocolDataSourceForTableView.h</DeclaredIn>
+			
+			<Declaration>- (void)setTitleHeader:(NSString *)header ForSection:(NSInteger)section</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>header</Name>
+					<Abstract type="html">the header</Abstract>
+				</Parameter><Parameter>
+					<Name>section</Name>
+					<Abstract type="html">the section</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTitleHeader:ForSection:</Anchor>
             <NodeRef refid="2"/>
 		</Token>
 		

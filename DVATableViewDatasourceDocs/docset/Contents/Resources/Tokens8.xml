@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DVATableViewCellProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DVATableViewCellProtocol</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:25</Abstract>
+			<DeclaredIn>DVATableViewCellProtocol.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DVATableViewCellProtocol/bindWithModel:</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 16:05:54</Abstract>
+			<DeclaredIn>DVATableViewCellProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)bindWithModel:(id&lt;DVATableViewModelProtocol&gt;)viewModel</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>viewModel</Name>
+					<Abstract type="html">the viewModel to configure the cell</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/bindWithModel:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -22,6 +22,8 @@
  
  Implement ´bindWithModel:´ to map viewModel values to cell objects.
  
+ @param viewModel the viewModel to configure the cell
+ 
  @since 1.1.0
  */
 -(void)bindWithModel:(id<DVATableViewModelProtocol>)viewModel;

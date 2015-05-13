@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>DVATableViewModel Class Reference</title>
+	<title>DVATableViewModelDatasource Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -54,23 +54,17 @@
 
 	
 	
-	<optgroup label="Properties">
-		
-		<option value="//api/name/cellConfigurationBlocks">cellConfigurationBlocks</option>
-		
-		<option value="//api/name/sections">sections</option>
-		
-	</optgroup>
-	
 
 	
 
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/cellModelForIndexPath:">- cellModelForIndexPath:</option>
+		<option value="//api/name/dva_numberOfSectionsInViewModel">- dva_numberOfSectionsInViewModel</option>
 		
-		<option value="//api/name/setCellModel:forIndexPath:">- setCellModel:forIndexPath:</option>
+		<option value="//api/name/dva_numberOfViewModelsInSection:">- dva_numberOfViewModelsInSection:</option>
+		
+		<option value="//api/name/dva_viewModelForRowAtIndexPath:">- dva_viewModelForRowAtIndexPath:</option>
 		
 	</optgroup>
 	
@@ -87,16 +81,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">DVATableViewModel Class Reference</h1>
+					<h1 class="title">DVATableViewModelDatasource Protocol Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Inherits from</th>
+	<th>Conforms to</th>
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>DVATableViewModel.h</td>
+	<td>DVATableViewModelDatasource.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -106,7 +100,9 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>Implementation for a tableView model</p>
+						<p>@author Pablo Romeu, 15-05-12 16:05:15</p>
+
+<p>This protocol serves as a datasource of viewModels</p>
 					</div>
 					
 					
@@ -117,14 +113,14 @@
 						<a title="Tasks" name="tasks"></a>
 						
 
-						<a title="Properties" name="task_Properties"></a>
-						<h2 class="task-title">Properties</h2>
+						
+						
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/sections" title="sections"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sections">&nbsp;&nbsp;sections</a></code>
-</h3>
+	<a name="//api/name/dva_numberOfSectionsInViewModel" title="dva_numberOfSectionsInViewModel"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dva_numberOfSectionsInViewModel">&ndash;&nbsp;dva_numberOfSectionsInViewModel</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -133,25 +129,35 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The sections for the tableView</p>
+				<p>@author Pablo Romeu, 15-05-12 16:05:32</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSArray *sections</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSInteger)dva_numberOfSectionsInViewModel</code></div>
 
 		    
 			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a number of sections for the tableView</p>
+			</div>
 			
 
 			
 			<div class="method-subsection availability">
 				<h4 class="method-subtitle parameter-title">Availability</h4>
-				<p>1.0</p>
+				<p>1.1.0</p>
 			</div>
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the number of sections at indexPath</p>
+			</div>
 			
 
 			
@@ -161,16 +167,16 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">DVATableViewModel.h</code></p>
+				<p><code class="declared-in-ref">DVATableViewModelDatasource.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/cellConfigurationBlocks" title="cellConfigurationBlocks"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cellConfigurationBlocks">&nbsp;&nbsp;cellConfigurationBlocks</a></code>
-</h3>
+	<a name="//api/name/dva_numberOfViewModelsInSection:" title="dva_numberOfViewModelsInSection:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dva_numberOfViewModelsInSection:">&ndash;&nbsp;dva_numberOfViewModelsInSection:</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -179,25 +185,47 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Setup cells blocks with identifiers. These identifiers are used for the cells and the xibs</p>
+				<p>@author Pablo Romeu, 15-05-12 16:05:07</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableDictionary *cellConfigurationBlocks</code></div>
+			<div class="method-subsection method-declaration"><code>- (NSInteger)dva_numberOfViewModelsInSection:(NSInteger)<em>section</em></code></div>
 
 		    
 			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>section</code></th>
+						<td><p>the section</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a number of viewModel (cells)</p>
+			</div>
 			
 
 			
 			<div class="method-subsection availability">
 				<h4 class="method-subtitle parameter-title">Availability</h4>
-				<p>1.0</p>
+				<p>1.1.0</p>
 			</div>
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The number of viewModels for a concrete section</p>
+			</div>
 			
 
 			
@@ -207,24 +235,16 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">DVATableViewModel.h</code></p>
+				<p><code class="declared-in-ref">DVATableViewModelDatasource.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
-</div>
-						</div>
-						
-
-						<a title="Accesors" name="task_Accesors"></a>
-						<h2 class="task-title">Accesors</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/cellModelForIndexPath:" title="cellModelForIndexPath:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/cellModelForIndexPath:">&ndash;&nbsp;cellModelForIndexPath:</a></code>
-</h3>
+</div><div class="section-method">
+	<a name="//api/name/dva_viewModelForRowAtIndexPath:" title="dva_viewModelForRowAtIndexPath:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dva_viewModelForRowAtIndexPath:">&ndash;&nbsp;dva_viewModelForRowAtIndexPath:</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -233,12 +253,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Returns a cell at the specified indexPath</p>
+				<p>@author Pablo Romeu, 15-05-12 16:05:11</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (DVATableViewCellModel *)cellModelForIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (id&lt;DVATableViewModelProtocol&gt;)dva_viewModelForRowAtIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
 
 		    
 			
@@ -258,17 +278,22 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>a cell model</p>
+				<p>the viewModel to be set</p>
 			</div>
 			
 
 			
 			<div class="method-subsection availability">
 				<h4 class="method-subtitle parameter-title">Availability</h4>
-				<p>1.0</p>
+				<p>1.1.0</p>
 			</div>
 			
 
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a viewModel for a concrete row</p>
+			</div>
 			
 
 			
@@ -278,70 +303,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">DVATableViewModel.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/setCellModel:forIndexPath:" title="setCellModel:forIndexPath:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/setCellModel:forIndexPath:">&ndash;&nbsp;setCellModel:forIndexPath:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Sets a cell at a specified indexPath</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)setCellModel:(DVATableViewCellModel *)<em>cell</em> forIndexPath:(NSIndexPath *)<em>indexPath</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>cell</code></th>
-						<td><p>the cell</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>indexPath</code></th>
-						<td><p>the indexPath</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection availability">
-				<h4 class="method-subtitle parameter-title">Availability</h4>
-				<p>1.0</p>
-			</div>
-			
-
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">DVATableViewModel.h</code></p>
+				<p><code class="declared-in-ref">DVATableViewModelDatasource.h</code></p>
 			</div>
 			
 			

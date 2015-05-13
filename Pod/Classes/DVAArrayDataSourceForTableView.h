@@ -303,7 +303,7 @@ typedef void(^cellBlock)(id item, id cell, NSIndexPath *indexPath);
  Helper to simplify the cellIdentifier selection
  
  @param items       the items
- @param identifiers the identifier
+ @param identifier  the identifier
  @param section     the Section
  @see setItems:withCellIdentifiers:perSection:
  

@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="">
+	<File path="Categories/NSArray+DVATableViewModelDatasource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSArray(DVATableViewModelDatasource)</TokenIdentifier>
+			<Abstract type="html">@author Pablo Romeu, 15-05-12 17:05:44</Abstract>
+			<DeclaredIn>NSArray+DVATableViewModelDatasource.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="6"/>
+		</Token>
 		
 		
         

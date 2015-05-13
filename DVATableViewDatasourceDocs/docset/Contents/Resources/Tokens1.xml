@@ -255,11 +255,11 @@
 					<Name>items</Name>
 					<Abstract type="html">the items</Abstract>
 				</Parameter><Parameter>
+					<Name>identifier</Name>
+					<Abstract type="html">the identifier</Abstract>
+				</Parameter><Parameter>
 					<Name>section</Name>
 					<Abstract type="html">the Section</Abstract>
-				</Parameter><Parameter>
-					<Name>identifiers</Name>
-					<Abstract type="html">the identifier</Abstract>
 				</Parameter>
 			</Parameters>
 			
