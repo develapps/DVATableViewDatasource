@@ -9,11 +9,25 @@
 #import "DVATableViewCell.h"
 #import "DVATestCellModel.h"
 
-@implementation DVATableViewCell
+@interface  DVATableViewCell ()
 
+@property (weak, nonatomic) IBOutlet UILabel    *theLabel;
+@property (weak, nonatomic) IBOutlet UISwitch   *theSwitch;
+
+-(IBAction)switched:(UISwitch*)sender;
+
+@end
+
+@implementation DVATableViewCell
 
 -(void)bindWithModel:(id)viewModel{
     DVATestCellModel*model=viewModel;
     [self.theLabel setText:model.title];
+    [self.theSwitch setOn:model.isOn];
 }
+
+-(IBAction)switched:(UISwitch*)sender{
+    [self.delegate cell:self switchDidSwitch:sender];
+}
+
 @end

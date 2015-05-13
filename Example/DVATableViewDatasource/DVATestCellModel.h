@@ -10,6 +10,7 @@
 #import <DVATableViewModelProtocol.h>
 
 @interface DVATestCellModel : NSObject <DVATableViewModelProtocol>
-@property (nonatomic,strong) NSString*title;
+@property (nonatomic,strong)    NSString    *title;
+@property (nonatomic)           BOOL        isOn;
 
 @end

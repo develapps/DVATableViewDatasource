@@ -10,11 +10,9 @@
 #import <DVAProtocolDataSourceForTableView.h>
 #import <NSDictionary+DVATableViewModelDatasource.h>
 #import "DVATestCellModel.h"
-#import "DVATestCellModelTwo.h"
 #import "DVATableViewCell.h"
-#import "DVATableViewCellTwo.h"
 
-@interface DVATableViewDatasourceNSDictionaryController ()
+@interface DVATableViewDatasourceNSDictionaryController () <DVATableViewActionDelegate,DVATableViewModelDatasourceDelegate>
 @property (nonatomic,strong) DVAProtocolDataSourceForTableView  *datasource;
 @property (nonatomic,strong) NSDictionary                       *viewModelManager;
 @end
@@ -35,36 +33,22 @@
     [super viewWillAppear:animated];
     _viewModelManager=[NSDictionary new];
     NSArray*tmp=[NSArray new];
-    for (int i=0; i<4; i++) {
-        if (i%2==0) {
-            DVATestCellModel*cm=[DVATestCellModel new];
-            cm.title=[NSString stringWithFormat:@"Cell %i",i];
-            tmp=[tmp arrayByAddingObject:cm];
-        }
-        else{
-            DVATestCellModelTwo*cm=[DVATestCellModelTwo new];
-            cm.title=[NSString stringWithFormat:@"Two %i",i];
-            tmp=[tmp arrayByAddingObject:cm];
-        }
+    for (int i=0; i<6; i++) {
+        DVATestCellModel*cm=[DVATestCellModel new];
+        cm.title=[NSString stringWithFormat:@"Cell %i",i];
+        tmp=[tmp arrayByAddingObject:cm];
     }
     NSArray*tmp2=[NSArray new];
-    for (int i=0; i<4; i++) {
-        if (i%2==0) {
-            DVATestCellModel*cm=[DVATestCellModel new];
-            cm.title=[NSString stringWithFormat:@"Cell %i",i];
-            tmp2=[tmp2 arrayByAddingObject:cm];
-        }
-        else{
-            DVATestCellModelTwo*cm=[DVATestCellModelTwo new];
-            cm.title=[NSString stringWithFormat:@"Two %i",i];
-            tmp2=[tmp2 arrayByAddingObject:cm];
-        }
-
+    for (int i=0; i<40; i++) {
+        DVATestCellModel*cm=[DVATestCellModel new];
+        cm.title=[NSString stringWithFormat:@"Cell %i",i];
+        tmp2=[tmp2 arrayByAddingObject:cm];
     }
 
     _viewModelManager=@{@(0):tmp,
                         @(1):tmp2};
     _datasource.viewModelDataSource=_viewModelManager;
+    _datasource.delegate=self;
     [_datasource setTitleHeader:@"section 1" ForSection:0];
     [_datasource setTitleHeader:@"section 2" ForSection:1];
 }
@@ -76,5 +60,29 @@
     self.tableView.dataSource=_datasource;
 }
 
+#pragma mark - TableViewDataSource Delegate
+
+-(void)dataSource:(id<DVATableViewModelDatasource>)datasource postBindCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath{
+    if ([cell isKindOfClass:[DVATableViewCell class]]) {
+        DVATableViewCell*aCell=(DVATableViewCell*)cell;
+        [aCell.contentView setBackgroundColor:indexPath.row%2==0?[UIColor redColor]:[UIColor blueColor]];
+        aCell.delegate=self;
+    }
+}
+
+#pragma mark - Actions
+
+-(void)cell:(UITableViewCell *)cell switchDidSwitch:(UISwitch *)aSwitch{
+    UIAlertController*alert=[UIAlertController alertControllerWithTitle:@"Cell switched"
+                                                                message:[NSString stringWithFormat:@"Cell %@ switched to %i",cell,aSwitch.isOn]
+                                                         preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 @end
+
+
 

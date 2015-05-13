@@ -1,14 +1,19 @@
 PODS:
-  - DVATableViewDatasource (1.2.0)
+  - DVATableViewDatasource (1.2.1)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core (= 2.2)
+  - MagicalRecord/Core (2.2)
 
 DEPENDENCIES:
   - DVATableViewDatasource (from `../`)
+  - MagicalRecord
 
 EXTERNAL SOURCES:
   DVATableViewDatasource:
     :path: ../
 
 SPEC CHECKSUMS:
-  DVATableViewDatasource: 2ce99278428b51bfea6fb86452393f8e22188d55
+  DVATableViewDatasource: 1d50a88c1352ecbcd2ce1ab0da7d1556e10f7f28
+  MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
 
 COCOAPODS: 0.37.1

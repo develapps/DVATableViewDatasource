@@ -1,11 +1,13 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+
 target 'DVATableViewDatasource', :exclusive => true do
+  pod 'MagicalRecord', :inhibit_warnings => true
   pod "DVATableViewDatasource", :path => "../"
 end
 
-target 'Tests', :exclusive => true do
-  pod "DVATableViewDatasource", :path => "../"
 
-  
+target 'Tests', :exclusive => true do
+  pod 'MagicalRecord', :inhibit_warnings => true
+  pod "DVATableViewDatasource", :path => "../"
 end

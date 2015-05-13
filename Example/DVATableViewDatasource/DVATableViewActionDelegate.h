@@ -8,6 +8,6 @@
 
 @protocol DVATableViewActionDelegate <NSObject>
 
--(void)switchDidSwitch:(BOOL)enabled;
+-(void)cell:(UITableViewCell*)cell switchDidSwitch:(UISwitch*)aSwitch;
 
 @end
