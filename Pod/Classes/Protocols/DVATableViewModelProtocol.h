@@ -1,5 +1,5 @@
 //
-//  DVATableViewModelCellDelegate
+//  DVATableViewModelProtocol
 //  Pods
 //
 //  Created by Pablo Romeu on 12/5/15.
@@ -14,7 +14,7 @@
  
  @since 1.1.0
  */
-@protocol DVATableViewModelCellDelegate <NSObject>
+@protocol DVATableViewModelProtocol <NSObject>
 /**
  @author Pablo Romeu, 15-05-12 16:05:58
  
@@ -22,6 +22,6 @@
  
  @since 1.1.0
  */
-@property (nonatomic,strong) NSString*dva_cellIdentifier;
+-(NSString*)dva_cellIdentifier;
 
 @end

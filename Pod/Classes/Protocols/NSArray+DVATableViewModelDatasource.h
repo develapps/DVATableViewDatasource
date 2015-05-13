@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DVAViewModelDataSourceProtocol.h"
+#import "DVATableViewModelDatasource.h"
 /**
  @author Pablo Romeu, 15-05-12 17:05:44
  
@@ -15,6 +15,6 @@
  
  @since 1.1.0
  */
-@interface NSArray (DVAViewModelDatasource) <DVAViewModelDataSourceProtocol>
+@interface NSArray (DVATableViewModelDatasource) <DVATableViewModelDatasource>
 
 @end

@@ -7,22 +7,13 @@
 //
 
 #import "DVATestCellModelTwo.h"
-
-
-@interface DVATestCellModelTwo ()
-{
-    NSString*_identifier;
-}
-@end
+#import "DVATableViewCellTwo.h"
 
 @implementation DVATestCellModelTwo
 
--(void)setDva_cellIdentifier:(NSString *)dva_cellIdentifier{
-    _identifier=[dva_cellIdentifier copy];
-}
 
 -(NSString*)dva_cellIdentifier{
-    return _identifier;
+    return [DVATableViewCellTwo description];
 }
 
 @end

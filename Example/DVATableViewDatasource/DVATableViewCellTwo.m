@@ -9,21 +9,12 @@
 #import "DVATableViewCellTwo.h"
 #import "DVATestCellModel.h"
 
-@interface DVATableViewCellTwo ()
-{
-    DVATestCellModel * _viewModel;
-}
-@end
-
 @implementation DVATableViewCellTwo
 
--(id)viewModel{
-    return _viewModel;
+-(void)bindWithModel:(id)viewModel{
+    DVATestCellModel*model=viewModel;
+    [self.theLabel setText:model.title];
+    [self.contentView setBackgroundColor:[UIColor blueColor]];
 }
 
--(void)setViewModel:(id)viewModel{
-    _viewModel=(DVATestCellModel*)viewModel;
-    [self.contentView setBackgroundColor:[UIColor blueColor]];
-    [self.theLabel setText:_viewModel.title];
-}
 @end

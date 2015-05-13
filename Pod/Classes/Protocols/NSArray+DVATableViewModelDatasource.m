@@ -6,20 +6,20 @@
 //
 //
 
-#import "NSArray+DVAViewModelDatasource.h"
+#import "NSArray+DVATableViewModelDatasource.h"
 
-@implementation  NSArray (DVAViewModelDatasource)
+@implementation  NSArray (DVATableViewModelDatasource)
 
 
 #pragma mark - Protocol DVAViewModelDatasource
 
-- (NSInteger)numberOfSectionsInViewModel{
+- (NSInteger)dva_numberOfSectionsInViewModel{
     return 1;
 }
-- (NSInteger)numberOfViewModelsInSection:(NSInteger)section{
+- (NSInteger)dva_numberOfViewModelsInSection:(NSInteger)section{
     return [self count];
 }
-- (id)viewModelForRowAtIndexPath:(NSIndexPath *)indexPath
+- (id)dva_viewModelForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section==0        &&
         indexPath.row>=0             &&

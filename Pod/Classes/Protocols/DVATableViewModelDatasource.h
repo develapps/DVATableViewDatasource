@@ -1,5 +1,5 @@
 //
-//  DVAViewModelDataSourceProtocol.h
+//  DVATableViewModelDatasource
 //  Pods
 //
 //  Created by Pablo Romeu on 12/5/15.
@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol DVATableViewModelProtocol;
 
 /**
  @author Pablo Romeu, 15-05-12 16:05:15
@@ -15,7 +16,7 @@
  
  @since 1.1.0
  */
-@protocol DVAViewModelDataSourceProtocol <NSObject>
+@protocol DVATableViewModelDatasource <NSObject>
 @required
 #pragma mark - datasource
 /**
@@ -27,7 +28,7 @@
  
  @since 1.1.0
  */
-- (NSInteger)numberOfSectionsInViewModel;
+- (NSInteger)dva_numberOfSectionsInViewModel;
 /**
  @author Pablo Romeu, 15-05-12 16:05:07
  
@@ -39,7 +40,7 @@
  
  @since 1.1.0
  */
-- (NSInteger)numberOfViewModelsInSection:(NSInteger)section;
+- (NSInteger)dva_numberOfViewModelsInSection:(NSInteger)section;
 /**
  @author Pablo Romeu, 15-05-12 16:05:11
  
@@ -51,6 +52,6 @@
  
  @since 1.1.0
  */
-- (id)viewModelForRowAtIndexPath:(NSIndexPath *)indexPath;
+- (id<DVATableViewModelProtocol>)dva_viewModelForRowAtIndexPath:(NSIndexPath *)indexPath;
 
 @end

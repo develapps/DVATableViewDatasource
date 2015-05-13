@@ -7,387 +7,395 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E090117A116A6AD3649EBE /* DVATableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B12A91F85205610AB3189C /* DVATableViewCellModel.h */; };
-		0973D726FF79C3F1C0119173 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B94A3CD2523117325356E5 /* Foundation.framework */; };
-		0EF93A6851C70340931EB20E /* NSDictionary+DVAViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2310CAF1841531821BDFA996 /* NSDictionary+DVAViewModelDatasource.m */; };
-		1076838D4077EF192B992413 /* DVATableViewConfigurableCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90CCE86616A167BA43EC92 /* DVATableViewConfigurableCellProtocol.h */; };
-		181D73580CAE86D34EF64675 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88C1D145DB961C1F9C8D36D /* UIKit.framework */; };
-		1AA34A3A92F7F5BCA1222771 /* DVATableViewConfigurableCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90CCE86616A167BA43EC92 /* DVATableViewConfigurableCellProtocol.h */; };
-		27E93BDC3A42F99D45DBEC97 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 399CCDCB4E546C138D475045 /* Pods-Tests-dummy.m */; };
-		362ED2F59D1FECB9701C6B70 /* DVATableViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFF9161569DEB02986BB314 /* DVATableViewModel.h */; };
-		3AA7706EC7CB3333A1D4C63B /* NSDictionary+DVAViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = E6997FFDF45AF2465C47BBAF /* NSDictionary+DVAViewModelDatasource.h */; };
-		3BB52FA55A3EE9347C026333 /* DVATableViewSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2D778E73D852D3CE1F4FBF /* DVATableViewSectionModel.h */; };
-		3ECFD70D89A04495106D550D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B94A3CD2523117325356E5 /* Foundation.framework */; };
-		400275D323452686A3B54B93 /* DVATableViewCellIdentifierProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DC861221BD6EE423B7D366A8 /* DVATableViewCellIdentifierProtocol.h */; };
-		5AC33625E18C2CEFC4E37511 /* Pods-DVATableViewDatasource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A487A8AFB583937771C8B44C /* Pods-DVATableViewDatasource-dummy.m */; };
-		5EA961DCB54CC7A906F11EA6 /* NSDictionary+DVAViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2310CAF1841531821BDFA996 /* NSDictionary+DVAViewModelDatasource.m */; };
-		5F7A1FBD26A1FA9A2F2C229E /* DVAViewModelDataSourceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 48FD4317587C3BACB1D7D134 /* DVAViewModelDataSourceProtocol.h */; };
-		63D945BCDF056ECBA97AEE39 /* DVAArrayDataSourceForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EC7871286B909BC1245F6A /* DVAArrayDataSourceForTableView.m */; };
-		744764D63C2C63C302F54730 /* NSArray+DVAViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 720679B0BD17EFD995AA8A90 /* NSArray+DVAViewModelDatasource.m */; };
-		7BFFF1E558B8BEBFE63D43AB /* DVATableViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFF9161569DEB02986BB314 /* DVATableViewModel.h */; };
-		7C9BA7E01992FCCEFADF06AD /* DVATableViewSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F2D778E73D852D3CE1F4FBF /* DVATableViewSectionModel.h */; };
-		897D9A02FA554D71839E23BA /* DVAViewModelDataSourceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 48FD4317587C3BACB1D7D134 /* DVAViewModelDataSourceProtocol.h */; };
-		8C119A193DA39B4CDC26A271 /* NSArray+DVAViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 720679B0BD17EFD995AA8A90 /* NSArray+DVAViewModelDatasource.m */; };
-		9BBCA7D4C23448F70C43C2FE /* DVATableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A99AEEB9C58A875D0E089268 /* DVATableViewModel.m */; };
-		A59C1176837261BD58208670 /* Pods-Tests-DVATableViewDatasource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B707CDE5BEBC4075A57A3B8A /* Pods-Tests-DVATableViewDatasource-dummy.m */; };
-		A94C9665BA4389831F21E158 /* DVATableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A99AEEB9C58A875D0E089268 /* DVATableViewModel.m */; };
-		B11DD8195A31F666A7CD8795 /* NSArray+DVAViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = F84C273D45E2EBA1B7B8E595 /* NSArray+DVAViewModelDatasource.h */; };
-		B5BF61E4E8B663CD4CCD35DE /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2011F4884D2A10A4073EA3C /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m */; };
-		B85EC62F1F4345452618D2C3 /* DVATableViewSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5555A3BB434B236EC202F8AC /* DVATableViewSectionModel.m */; };
-		B8EA1D6A07119E666704162C /* DVATableViewCellIdentifierProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DC861221BD6EE423B7D366A8 /* DVATableViewCellIdentifierProtocol.h */; };
-		C1F325B6B0C4F19B1E5BB9A8 /* DVATableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B12A91F85205610AB3189C /* DVATableViewCellModel.h */; };
-		C87F6273E9E053B9B1925A66 /* DVAArrayDataSourceForTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9315E2F59B7F81BFEA20AEE /* DVAArrayDataSourceForTableView.h */; };
-		C9797CB1D05ABFAB0836B41C /* DVAArrayDataSourceForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91EC7871286B909BC1245F6A /* DVAArrayDataSourceForTableView.m */; };
-		DA5B39E2F7CD780A1B6B8DEC /* DVAArrayDataSourceForTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = C9315E2F59B7F81BFEA20AEE /* DVAArrayDataSourceForTableView.h */; };
-		E4E0E45AFFCF6568CAE2561A /* NSArray+DVAViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = F84C273D45E2EBA1B7B8E595 /* NSArray+DVAViewModelDatasource.h */; };
-		E6F0B0A2529690F8C4B742D2 /* DVATableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A7BF63DA3AAE83F72E0730 /* DVATableViewCellModel.m */; };
-		ECB24671E38D03E9EDB5698D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A88C1D145DB961C1F9C8D36D /* UIKit.framework */; };
-		EF1E452C510DBF2D4CB126BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B94A3CD2523117325356E5 /* Foundation.framework */; };
-		F1C2049A4DE0E7B7075DBBD9 /* NSDictionary+DVAViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = E6997FFDF45AF2465C47BBAF /* NSDictionary+DVAViewModelDatasource.h */; };
-		F48E2E4FAF2EACA020FE5CB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68B94A3CD2523117325356E5 /* Foundation.framework */; };
-		F9A9AD324B8AA60EF3771667 /* DVATableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C6A7BF63DA3AAE83F72E0730 /* DVATableViewCellModel.m */; };
-		FFAD03460E713C93D2FF1CC3 /* DVATableViewSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5555A3BB434B236EC202F8AC /* DVATableViewSectionModel.m */; };
+		00EFC0717EA2E7D63444D5A3 /* NSDictionary+DVATableViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 125DEC8637CB717EE34023B0 /* NSDictionary+DVATableViewModelDatasource.m */; };
+		02FAA4EF9A6A677C5F953ED7 /* DVATableViewSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FB89A397E465D3C49721A2EA /* DVATableViewSectionModel.h */; };
+		03DF8CA01C33AF7F5508141D /* DVAArrayDataSourceForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D6E6A2370BFF00A081B501 /* DVAArrayDataSourceForTableView.m */; };
+		06BB7BA9E43BBE0F6DFE5F11 /* DVATableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB45B42F2825F94AE636608A /* DVATableViewModel.m */; };
+		0E3AB0DD9171F147082F50E5 /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6254524222AA74AE4ECE5B96 /* Pods-Tests-dummy.m */; };
+		12E43A4CAD9A3AF00AD8410E /* DVATableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DB45B42F2825F94AE636608A /* DVATableViewModel.m */; };
+		12E81398972D7E99174AE214 /* DVATableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A1DF62AD53587418779FC8 /* DVATableViewCellModel.m */; };
+		17AC04E308955CEEDF6141A3 /* DVATableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9513E933C82C1FECCFE95ADE /* DVATableViewCellModel.h */; };
+		1D3A20B3F02A40746AE41CF1 /* DVATableViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DDE7F0F86B34E9CD0648FEC /* DVATableViewModelDatasource.h */; };
+		207AFBBA4053FC764644F558 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BAF8AC12A877FB557DE853 /* UIKit.framework */; };
+		27CCF5F189FCD133226EA0D2 /* NSArray+DVATableViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6CF4A3D2F686439FB6086E /* NSArray+DVATableViewModelDatasource.h */; };
+		28F5C0FB1683C742E71CFE07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25339C015B293681D5FB9A8F /* Foundation.framework */; };
+		3640AF7056A564AEC9EE265D /* NSArray+DVATableViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6CF4A3D2F686439FB6086E /* NSArray+DVATableViewModelDatasource.h */; };
+		381A7CE792B585E2A4F06F19 /* DVATableViewCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 991635190E95946BDCE6D2BB /* DVATableViewCellProtocol.h */; };
+		3E256422C2DD886AA58DD8F3 /* DVATableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9513E933C82C1FECCFE95ADE /* DVATableViewCellModel.h */; };
+		4107F8BDEE76D851CD41F1B5 /* NSArray+DVATableViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFC0B65A9E8E6C19BCBB6E /* NSArray+DVATableViewModelDatasource.m */; };
+		419209F411E1A246ADC39A78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25339C015B293681D5FB9A8F /* Foundation.framework */; };
+		4488E6209635B003CBD5C810 /* DVATableViewModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AED7400DA29AE7BCF345C23 /* DVATableViewModelProtocol.h */; };
+		4620E2AD5D613A19283FA89C /* DVATableViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D63D50119A97126EE8928A67 /* DVATableViewModel.h */; };
+		4DCB93F544836BD5567AFE6F /* DVAArrayDataSourceForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D6E6A2370BFF00A081B501 /* DVAArrayDataSourceForTableView.m */; };
+		548624AA74E8BB7806D87C58 /* DVATableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A1DF62AD53587418779FC8 /* DVATableViewCellModel.m */; };
+		619B54139C16D74039A62DAE /* Pods-Tests-DVATableViewDatasource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C94439977838CBFA54A3C9 /* Pods-Tests-DVATableViewDatasource-dummy.m */; };
+		64B188CA29E7E5B768224162 /* NSArray+DVATableViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFC0B65A9E8E6C19BCBB6E /* NSArray+DVATableViewModelDatasource.m */; };
+		6AA3F2FCBE3469810FBB3005 /* DVAProtocolDataSourceForTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FF675D2E4C5FA2203C049206 /* DVAProtocolDataSourceForTableView.h */; };
+		6EBFB9E6927EB638BE23384F /* DVATableViewSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC4230CB69324FD85606251 /* DVATableViewSectionModel.m */; };
+		748E226308EB91347FDE48B7 /* DVAProtocolDataSourceForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB054A04BB668448097B496 /* DVAProtocolDataSourceForTableView.m */; };
+		819652094B2B17DA37B8E9BA /* DVAArrayDataSourceForTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 347AD2089F85E5883491F766 /* DVAArrayDataSourceForTableView.h */; };
+		87B24D329512568BAF306300 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BAF8AC12A877FB557DE853 /* UIKit.framework */; };
+		88B7F29DA0D54AD84DC5EEFB /* DVATableViewSectionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FB89A397E465D3C49721A2EA /* DVATableViewSectionModel.h */; };
+		942F92C792DCA829DEFAA466 /* DVATableViewCellProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 991635190E95946BDCE6D2BB /* DVATableViewCellProtocol.h */; };
+		A832E8EF1E61D003BC1C440D /* DVATableViewModelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AED7400DA29AE7BCF345C23 /* DVATableViewModelProtocol.h */; };
+		AEF50F60ABE251EA37F8AF12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25339C015B293681D5FB9A8F /* Foundation.framework */; };
+		AFF7DCAEBE808DF38DE8C0A5 /* DVATableViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DDE7F0F86B34E9CD0648FEC /* DVATableViewModelDatasource.h */; };
+		B1CE109606A43007D1603C05 /* DVATableViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D63D50119A97126EE8928A67 /* DVATableViewModel.h */; };
+		CA059E2FAC9C98A2002A38B5 /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 648095EABE22ABE077550E9C /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m */; };
+		D79FBED8E6EC0A52ED610554 /* DVAProtocolDataSourceForTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FF675D2E4C5FA2203C049206 /* DVAProtocolDataSourceForTableView.h */; };
+		DA468F2B698B300AE333537E /* DVAProtocolDataSourceForTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB054A04BB668448097B496 /* DVAProtocolDataSourceForTableView.m */; };
+		DD04BEFB8E793C7EC48441C0 /* NSDictionary+DVATableViewModelDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 125DEC8637CB717EE34023B0 /* NSDictionary+DVATableViewModelDatasource.m */; };
+		E22FF92D7942C3054F46CAA8 /* NSDictionary+DVATableViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2F63B23DE8F5BF76AE49B2 /* NSDictionary+DVATableViewModelDatasource.h */; };
+		EA34890A585E04D237C27E44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25339C015B293681D5FB9A8F /* Foundation.framework */; };
+		EC69C049CA31992297B282C5 /* NSDictionary+DVATableViewModelDatasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C2F63B23DE8F5BF76AE49B2 /* NSDictionary+DVATableViewModelDatasource.h */; };
+		F1D8E24AFC0631BAF9F65A4B /* Pods-DVATableViewDatasource-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 447EAF3A551355D324C89622 /* Pods-DVATableViewDatasource-dummy.m */; };
+		F4BC920633CB73BD6E87D1E7 /* DVATableViewSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDC4230CB69324FD85606251 /* DVATableViewSectionModel.m */; };
+		F7858E437A3CA855BA74C34A /* DVAArrayDataSourceForTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 347AD2089F85E5883491F766 /* DVAArrayDataSourceForTableView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7217338016543680E20AFB23 /* PBXContainerItemProxy */ = {
+		01D18F6E19ECF2526ADC634C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0329B985595ADF61C59A53CB /* Project object */;
+			containerPortal = 448F4F59AE1D6C71D1806DE2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2AF6705CA64E7B87FEBCCEBD;
+			remoteGlobalIDString = 027F4D86E204134D4835DD7D;
 			remoteInfo = "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource";
 		};
-		990F750B5C1EED47B58CB8DF /* PBXContainerItemProxy */ = {
+		3BDCC52549AA0E2E36C4168A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0329B985595ADF61C59A53CB /* Project object */;
+			containerPortal = 448F4F59AE1D6C71D1806DE2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A74418923D42D6E056B131B;
+			remoteGlobalIDString = 44BA0CA508FEF03AA5CED158;
 			remoteInfo = "Pods-Tests-DVATableViewDatasource";
 		};
-		9EA1997749F315E1971BB6EF /* PBXContainerItemProxy */ = {
+		EB5ABFB3480D4C093F2230F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0329B985595ADF61C59A53CB /* Project object */;
+			containerPortal = 448F4F59AE1D6C71D1806DE2 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3F203A13E9F4A8D7E35FA587;
-			remoteInfo = "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource";
-		};
-		AF4AF439E3128C43A30A6E0F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0329B985595ADF61C59A53CB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 87EA8FCCFCF8A96784B43506;
+			remoteGlobalIDString = 2BC8B99A76E4598293024EE1;
 			remoteInfo = "Pods-DVATableViewDatasource-DVATableViewDatasource";
+		};
+		F49C3964EFC53EEDBEB707A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 448F4F59AE1D6C71D1806DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32F7FD987FFDFFA7B22F7BD5;
+			remoteInfo = "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0E654AF4C4A2BBBCC82BE02A /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
-		0F4ADCBF162699AB90AE7BC9 /* Pods-DVATableViewDatasource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource.debug.xcconfig"; sourceTree = "<group>"; };
-		1B00906D5B1EC4FDC9BB5662 /* libPods-DVATableViewDatasource-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EFF9161569DEB02986BB314 /* DVATableViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewModel.h; sourceTree = "<group>"; };
-		1F90CCE86616A167BA43EC92 /* DVATableViewConfigurableCellProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewConfigurableCellProtocol.h; sourceTree = "<group>"; };
-		2310CAF1841531821BDFA996 /* NSDictionary+DVAViewModelDatasource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DVAViewModelDatasource.m"; sourceTree = "<group>"; };
-		279928A811DF50DAB2523F0F /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig"; sourceTree = "<group>"; };
-		39387236381847F157806284 /* libPods-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		399CCDCB4E546C138D475045 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
-		3B95F66F2C76E5F82D3FA9DA /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BCABF507161D6079381D75F /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3D227D1307FA5D870101041E /* DVATableViewDatasource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVATableViewDatasource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		411E7E98DFC0F3467C946292 /* Pods-DVATableViewDatasource-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVATableViewDatasource-environment.h"; sourceTree = "<group>"; };
-		43D17CAAD11B71F61465F14C /* Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch"; sourceTree = "<group>"; };
-		48FD4317587C3BACB1D7D134 /* DVAViewModelDataSourceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVAViewModelDataSourceProtocol.h; sourceTree = "<group>"; };
-		4FFA65CF5137FA8AB8B45261 /* Pods-Tests-DVATableViewDatasource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVATableViewDatasource.xcconfig"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource.xcconfig"; sourceTree = "<group>"; };
-		5555A3BB434B236EC202F8AC /* DVATableViewSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVATableViewSectionModel.m; sourceTree = "<group>"; };
-		5A9CABAF0E4425FCC6D508D0 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5FB6EA48D692BEEB227B89BA /* Pods-DVATableViewDatasource-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DVATableViewDatasource-resources.sh"; sourceTree = "<group>"; };
-		66B12A91F85205610AB3189C /* DVATableViewCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewCellModel.h; sourceTree = "<group>"; };
-		68B94A3CD2523117325356E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68E8E6349642003EACF2ECFD /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
-		720679B0BD17EFD995AA8A90 /* NSArray+DVAViewModelDatasource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DVAViewModelDatasource.m"; sourceTree = "<group>"; };
-		8B240F8413FA172223C64F19 /* DVATableViewDatasource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVATableViewDatasource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		90EA6175C6F1CA5A136E2CA2 /* Pods-DVATableViewDatasource-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DVATableViewDatasource-acknowledgements.markdown"; sourceTree = "<group>"; };
-		91EC7871286B909BC1245F6A /* DVAArrayDataSourceForTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVAArrayDataSourceForTableView.m; sourceTree = "<group>"; };
-		922CA44867B7CCB08331A98E /* Pods-DVATableViewDatasource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource.release.xcconfig"; sourceTree = "<group>"; };
-		9F2D778E73D852D3CE1F4FBF /* DVATableViewSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewSectionModel.h; sourceTree = "<group>"; };
-		9F5244BE5B20E1561CCA3D58 /* Pods-DVATableViewDatasource-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DVATableViewDatasource-acknowledgements.plist"; sourceTree = "<group>"; };
-		A487A8AFB583937771C8B44C /* Pods-DVATableViewDatasource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVATableViewDatasource-dummy.m"; sourceTree = "<group>"; };
-		A7F6D3737F5371F7B0AA5E7C /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVATableViewDatasource-Private.xcconfig"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-Private.xcconfig"; sourceTree = "<group>"; };
-		A88C1D145DB961C1F9C8D36D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A93590EB15062D27964833C1 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A99AEEB9C58A875D0E089268 /* DVATableViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVATableViewModel.m; sourceTree = "<group>"; };
-		B2011F4884D2A10A4073EA3C /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m"; sourceTree = "<group>"; };
-		B53BDF187F30ABEB8FAE4E44 /* libPods-Tests-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B707CDE5BEBC4075A57A3B8A /* Pods-Tests-DVATableViewDatasource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-DVATableViewDatasource-dummy.m"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-dummy.m"; sourceTree = "<group>"; };
-		C6A7BF63DA3AAE83F72E0730 /* DVATableViewCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCellModel.m; sourceTree = "<group>"; };
-		C9315E2F59B7F81BFEA20AEE /* DVAArrayDataSourceForTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVAArrayDataSourceForTableView.h; sourceTree = "<group>"; };
-		CB4DC4A16C6FD11D7748A6AA /* Pods-Tests-DVATableViewDatasource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-DVATableViewDatasource-prefix.pch"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-prefix.pch"; sourceTree = "<group>"; };
-		D387FE01CA64CBF9D08A9B8A /* Pods-DVATableViewDatasource-DVATableViewDatasource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource-DVATableViewDatasource.xcconfig"; sourceTree = "<group>"; };
-		DC861221BD6EE423B7D366A8 /* DVATableViewCellIdentifierProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewCellIdentifierProtocol.h; sourceTree = "<group>"; };
-		E5776E702FF5DF50F3B78870 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E6997FFDF45AF2465C47BBAF /* NSDictionary+DVAViewModelDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DVAViewModelDatasource.h"; sourceTree = "<group>"; };
-		F1A633E98E05EC01C33E1684 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F84C273D45E2EBA1B7B8E595 /* NSArray+DVAViewModelDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+DVAViewModelDatasource.h"; sourceTree = "<group>"; };
+		05279692D776DA36BA48C5C0 /* Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch"; sourceTree = "<group>"; };
+		07596768607342A159B6A06A /* libPods-Tests-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AED7400DA29AE7BCF345C23 /* DVATableViewModelProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewModelProtocol.h; sourceTree = "<group>"; };
+		0B6D4D694060D03170B62C38 /* DVATableViewDatasource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVATableViewDatasource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		10522350A7541196764DE1A5 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		125DEC8637CB717EE34023B0 /* NSDictionary+DVATableViewModelDatasource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DVATableViewModelDatasource.m"; sourceTree = "<group>"; };
+		1291CF8B135841357BA64D03 /* Pods-Tests-DVATableViewDatasource-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Tests-DVATableViewDatasource-prefix.pch"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-prefix.pch"; sourceTree = "<group>"; };
+		163401C25AE3E4BEE50A8156 /* Pods-Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-resources.sh"; sourceTree = "<group>"; };
+		23DED02C686EDCB7C691A9A2 /* Pods-DVATableViewDatasource-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DVATableViewDatasource-environment.h"; sourceTree = "<group>"; };
+		25339C015B293681D5FB9A8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		26429B4DBFF520FD31AA6655 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		29C94439977838CBFA54A3C9 /* Pods-Tests-DVATableViewDatasource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Tests-DVATableViewDatasource-dummy.m"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-dummy.m"; sourceTree = "<group>"; };
+		2C2F63B23DE8F5BF76AE49B2 /* NSDictionary+DVATableViewModelDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DVATableViewModelDatasource.h"; sourceTree = "<group>"; };
+		2D677B3311A79F0DA6B3225B /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		347AD2089F85E5883491F766 /* DVAArrayDataSourceForTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVAArrayDataSourceForTableView.h; sourceTree = "<group>"; };
+		379E505A0DC6FAB3A7CAD49B /* Pods-DVATableViewDatasource-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DVATableViewDatasource-acknowledgements.plist"; sourceTree = "<group>"; };
+		3CB0E9D1E963E4D2C26CA870 /* Pods-DVATableViewDatasource-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DVATableViewDatasource-resources.sh"; sourceTree = "<group>"; };
+		3DEFC0B65A9E8E6C19BCBB6E /* NSArray+DVATableViewModelDatasource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DVATableViewModelDatasource.m"; sourceTree = "<group>"; };
+		447EAF3A551355D324C89622 /* Pods-DVATableViewDatasource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVATableViewDatasource-dummy.m"; sourceTree = "<group>"; };
+		50BCBB82B3973402885D1B4F /* libPods-DVATableViewDatasource-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E47C7C802BD150F2DC4D9B /* Pods-Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-environment.h"; sourceTree = "<group>"; };
+		6254524222AA74AE4ECE5B96 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
+		63097CC45F6B3871134C1214 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		648095EABE22ABE077550E9C /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m"; sourceTree = "<group>"; };
+		6EB054A04BB668448097B496 /* DVAProtocolDataSourceForTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVAProtocolDataSourceForTableView.m; sourceTree = "<group>"; };
+		78A1DF62AD53587418779FC8 /* DVATableViewCellModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCellModel.m; sourceTree = "<group>"; };
+		79B9E5E2CF8F797DEB313C93 /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVATableViewDatasource-Private.xcconfig"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-Private.xcconfig"; sourceTree = "<group>"; };
+		7DDE7F0F86B34E9CD0648FEC /* DVATableViewModelDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewModelDatasource.h; sourceTree = "<group>"; };
+		854615353A96832791F3B9F8 /* Pods-Tests-DVATableViewDatasource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests-DVATableViewDatasource.xcconfig"; path = "../Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource.xcconfig"; sourceTree = "<group>"; };
+		9513E933C82C1FECCFE95ADE /* DVATableViewCellModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewCellModel.h; sourceTree = "<group>"; };
+		991635190E95946BDCE6D2BB /* DVATableViewCellProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewCellProtocol.h; sourceTree = "<group>"; };
+		9D4AC17BCE7734146337F3DD /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A1D86AA9A569FBCC37BE37D6 /* DVATableViewDatasource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DVATableViewDatasource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A861888BD698674F8DFE22F8 /* Pods-DVATableViewDatasource-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DVATableViewDatasource-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A8E71FCCC46A79BCA7F89260 /* libPods-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93C9AB4A25BF25FF90B0840 /* Pods-DVATableViewDatasource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource.release.xcconfig"; sourceTree = "<group>"; };
+		BD6CF4A3D2F686439FB6086E /* NSArray+DVATableViewModelDatasource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+DVATableViewModelDatasource.h"; sourceTree = "<group>"; };
+		BEA627BEC906C241B3ADB822 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2BAF8AC12A877FB557DE853 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3B1174FD0E6D56DC21277E8 /* Pods-DVATableViewDatasource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource.debug.xcconfig"; sourceTree = "<group>"; };
+		C7D6E6A2370BFF00A081B501 /* DVAArrayDataSourceForTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVAArrayDataSourceForTableView.m; sourceTree = "<group>"; };
+		D63D50119A97126EE8928A67 /* DVATableViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewModel.h; sourceTree = "<group>"; };
+		DB45B42F2825F94AE636608A /* DVATableViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVATableViewModel.m; sourceTree = "<group>"; };
+		DBAA0561248F12E2C5CCBFF8 /* Pods-DVATableViewDatasource-DVATableViewDatasource.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource-DVATableViewDatasource.xcconfig"; sourceTree = "<group>"; };
+		E294420646CEAAE849A0D7EA /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig"; sourceTree = "<group>"; };
+		EDC4230CB69324FD85606251 /* DVATableViewSectionModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DVATableViewSectionModel.m; sourceTree = "<group>"; };
+		FB89A397E465D3C49721A2EA /* DVATableViewSectionModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVATableViewSectionModel.h; sourceTree = "<group>"; };
+		FF675D2E4C5FA2203C049206 /* DVAProtocolDataSourceForTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DVAProtocolDataSourceForTableView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		46A57386B8538CA9C1AC50D2 /* Frameworks */ = {
+		026D4149552EAD390A998D46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C7EC4F752C49D1AA7B836BA /* Frameworks */ = {
+		171E7CA11B4590A35A2E8F27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0973D726FF79C3F1C0119173 /* Foundation.framework in Frameworks */,
+				28F5C0FB1683C742E71CFE07 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E7A250A4BA51A8E53FD0A05 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F48E2E4FAF2EACA020FE5CB5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65FFF424119AEB14BB1A5C0B /* Frameworks */ = {
+		592D55BDB35D56FFCDA0CC8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A523C9260B05F56BF910A1A /* Frameworks */ = {
+		6E54E11E7F2F4DD68B647CD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ECFD70D89A04495106D550D /* Foundation.framework in Frameworks */,
-				ECB24671E38D03E9EDB5698D /* UIKit.framework in Frameworks */,
+				AEF50F60ABE251EA37F8AF12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7A45F13A66F6B05F9E06C94 /* Frameworks */ = {
+		7317544BA6C65C93E02A24D9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1E452C510DBF2D4CB126BC /* Foundation.framework in Frameworks */,
-				181D73580CAE86D34EF64675 /* UIKit.framework in Frameworks */,
+				EA34890A585E04D237C27E44 /* Foundation.framework in Frameworks */,
+				87B24D329512568BAF306300 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E1E606D51848498C2F828FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419209F411E1A246ADC39A78 /* Foundation.framework in Frameworks */,
+				207AFBBA4053FC764644F558 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		143C55E34A2BB43BE267EA3F /* Pods-DVATableViewDatasource */ = {
+		016F0896F3425BF3B9B748DD /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				90EA6175C6F1CA5A136E2CA2 /* Pods-DVATableViewDatasource-acknowledgements.markdown */,
-				9F5244BE5B20E1561CCA3D58 /* Pods-DVATableViewDatasource-acknowledgements.plist */,
-				A487A8AFB583937771C8B44C /* Pods-DVATableViewDatasource-dummy.m */,
-				411E7E98DFC0F3467C946292 /* Pods-DVATableViewDatasource-environment.h */,
-				5FB6EA48D692BEEB227B89BA /* Pods-DVATableViewDatasource-resources.sh */,
-				0F4ADCBF162699AB90AE7BC9 /* Pods-DVATableViewDatasource.debug.xcconfig */,
-				922CA44867B7CCB08331A98E /* Pods-DVATableViewDatasource.release.xcconfig */,
+				FD7E5B98936D31413D88CCA3 /* DVATableViewDatasource */,
 			);
-			name = "Pods-DVATableViewDatasource";
-			path = "Target Support Files/Pods-DVATableViewDatasource";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7684E984CDBD7E333A17F297 /* iOS */ = {
+		06AB791DCF219804EA220B25 /* Subclasses */ = {
 			isa = PBXGroup;
 			children = (
-				68B94A3CD2523117325356E5 /* Foundation.framework */,
-				A88C1D145DB961C1F9C8D36D /* UIKit.framework */,
+				9513E933C82C1FECCFE95ADE /* DVATableViewCellModel.h */,
+				78A1DF62AD53587418779FC8 /* DVATableViewCellModel.m */,
+				D63D50119A97126EE8928A67 /* DVATableViewModel.h */,
+				DB45B42F2825F94AE636608A /* DVATableViewModel.m */,
+				FB89A397E465D3C49721A2EA /* DVATableViewSectionModel.h */,
+				EDC4230CB69324FD85606251 /* DVATableViewSectionModel.m */,
 			);
-			name = iOS;
+			path = Subclasses;
 			sourceTree = "<group>";
 		};
-		792941C4351B27E2721D6CE2 /* Support Files */ = {
+		0824CB1CDACF933B386D3645 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D387FE01CA64CBF9D08A9B8A /* Pods-DVATableViewDatasource-DVATableViewDatasource.xcconfig */,
-				279928A811DF50DAB2523F0F /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */,
-				B2011F4884D2A10A4073EA3C /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m */,
-				43D17CAAD11B71F61465F14C /* Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch */,
-				4FFA65CF5137FA8AB8B45261 /* Pods-Tests-DVATableViewDatasource.xcconfig */,
-				A7F6D3737F5371F7B0AA5E7C /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */,
-				B707CDE5BEBC4075A57A3B8A /* Pods-Tests-DVATableViewDatasource-dummy.m */,
-				CB4DC4A16C6FD11D7748A6AA /* Pods-Tests-DVATableViewDatasource-prefix.pch */,
+				A49D8BD8B81648AC322B6791 /* Pods-DVATableViewDatasource */,
+				B3DF508760D417D65C170EB6 /* Pods-Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4CDC8A7856322D90F2491AED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				991635190E95946BDCE6D2BB /* DVATableViewCellProtocol.h */,
+				7DDE7F0F86B34E9CD0648FEC /* DVATableViewModelDatasource.h */,
+				0AED7400DA29AE7BCF345C23 /* DVATableViewModelProtocol.h */,
+				BD6CF4A3D2F686439FB6086E /* NSArray+DVATableViewModelDatasource.h */,
+				3DEFC0B65A9E8E6C19BCBB6E /* NSArray+DVATableViewModelDatasource.m */,
+				2C2F63B23DE8F5BF76AE49B2 /* NSDictionary+DVATableViewModelDatasource.h */,
+				125DEC8637CB717EE34023B0 /* NSDictionary+DVATableViewModelDatasource.m */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		75D01684B6BBA713856A690F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FE7F67571C6BE0C0101A217 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77AD9E3490CA3D21EB37E4F7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBAA0561248F12E2C5CCBFF8 /* Pods-DVATableViewDatasource-DVATableViewDatasource.xcconfig */,
+				E294420646CEAAE849A0D7EA /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */,
+				648095EABE22ABE077550E9C /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m */,
+				05279692D776DA36BA48C5C0 /* Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch */,
+				854615353A96832791F3B9F8 /* Pods-Tests-DVATableViewDatasource.xcconfig */,
+				79B9E5E2CF8F797DEB313C93 /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */,
+				29C94439977838CBFA54A3C9 /* Pods-Tests-DVATableViewDatasource-dummy.m */,
+				1291CF8B135841357BA64D03 /* Pods-Tests-DVATableViewDatasource-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-DVATableViewDatasource-DVATableViewDatasource";
 			sourceTree = "<group>";
 		};
-		9B9FFA71A372D0183495B51B /* Products */ = {
+		9FE7F67571C6BE0C0101A217 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				8B240F8413FA172223C64F19 /* DVATableViewDatasource.bundle */,
-				3D227D1307FA5D870101041E /* DVATableViewDatasource.bundle */,
-				39387236381847F157806284 /* libPods-DVATableViewDatasource.a */,
-				1B00906D5B1EC4FDC9BB5662 /* libPods-DVATableViewDatasource-DVATableViewDatasource.a */,
-				3B95F66F2C76E5F82D3FA9DA /* libPods-Tests.a */,
-				B53BDF187F30ABEB8FAE4E44 /* libPods-Tests-DVATableViewDatasource.a */,
+				25339C015B293681D5FB9A8F /* Foundation.framework */,
+				C2BAF8AC12A877FB557DE853 /* UIKit.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		AEEFD1FF3B10CA613DCDFFEE = {
+		A49D8BD8B81648AC322B6791 /* Pods-DVATableViewDatasource */ = {
 			isa = PBXGroup;
 			children = (
-				F1A633E98E05EC01C33E1684 /* Podfile */,
-				E403C35E5D89CEA5BAFD83BA /* Development Pods */,
-				BA90B0BFF124D2C54C2D2235 /* Frameworks */,
-				9B9FFA71A372D0183495B51B /* Products */,
-				BBA503F96DB7841D96D40F7F /* Targets Support Files */,
+				A861888BD698674F8DFE22F8 /* Pods-DVATableViewDatasource-acknowledgements.markdown */,
+				379E505A0DC6FAB3A7CAD49B /* Pods-DVATableViewDatasource-acknowledgements.plist */,
+				447EAF3A551355D324C89622 /* Pods-DVATableViewDatasource-dummy.m */,
+				23DED02C686EDCB7C691A9A2 /* Pods-DVATableViewDatasource-environment.h */,
+				3CB0E9D1E963E4D2C26CA870 /* Pods-DVATableViewDatasource-resources.sh */,
+				C3B1174FD0E6D56DC21277E8 /* Pods-DVATableViewDatasource.debug.xcconfig */,
+				A93C9AB4A25BF25FF90B0840 /* Pods-DVATableViewDatasource.release.xcconfig */,
 			);
+			name = "Pods-DVATableViewDatasource";
+			path = "Target Support Files/Pods-DVATableViewDatasource";
 			sourceTree = "<group>";
 		};
-		B1B6DE8348BD6D57A5F23CB3 /* DVATableViewDatasource */ = {
+		B3DF508760D417D65C170EB6 /* Pods-Tests */ = {
 			isa = PBXGroup;
 			children = (
-				FC71A735AA829AD2E3D07096 /* Pod */,
-				792941C4351B27E2721D6CE2 /* Support Files */,
-			);
-			name = DVATableViewDatasource;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B1F4F5F57825D4E4974D7562 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C9315E2F59B7F81BFEA20AEE /* DVAArrayDataSourceForTableView.h */,
-				91EC7871286B909BC1245F6A /* DVAArrayDataSourceForTableView.m */,
-				DC861221BD6EE423B7D366A8 /* DVATableViewCellIdentifierProtocol.h */,
-				66B12A91F85205610AB3189C /* DVATableViewCellModel.h */,
-				C6A7BF63DA3AAE83F72E0730 /* DVATableViewCellModel.m */,
-				1F90CCE86616A167BA43EC92 /* DVATableViewConfigurableCellProtocol.h */,
-				1EFF9161569DEB02986BB314 /* DVATableViewModel.h */,
-				A99AEEB9C58A875D0E089268 /* DVATableViewModel.m */,
-				9F2D778E73D852D3CE1F4FBF /* DVATableViewSectionModel.h */,
-				5555A3BB434B236EC202F8AC /* DVATableViewSectionModel.m */,
-				48FD4317587C3BACB1D7D134 /* DVAViewModelDataSourceProtocol.h */,
-				F84C273D45E2EBA1B7B8E595 /* NSArray+DVAViewModelDatasource.h */,
-				720679B0BD17EFD995AA8A90 /* NSArray+DVAViewModelDatasource.m */,
-				E6997FFDF45AF2465C47BBAF /* NSDictionary+DVAViewModelDatasource.h */,
-				2310CAF1841531821BDFA996 /* NSDictionary+DVAViewModelDatasource.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		BA90B0BFF124D2C54C2D2235 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7684E984CDBD7E333A17F297 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BBA503F96DB7841D96D40F7F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				143C55E34A2BB43BE267EA3F /* Pods-DVATableViewDatasource */,
-				EBBF9D72AF187C5A80D03389 /* Pods-Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E403C35E5D89CEA5BAFD83BA /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B1B6DE8348BD6D57A5F23CB3 /* DVATableViewDatasource */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		EBBF9D72AF187C5A80D03389 /* Pods-Tests */ = {
-			isa = PBXGroup;
-			children = (
-				3BCABF507161D6079381D75F /* Pods-Tests-acknowledgements.markdown */,
-				5A9CABAF0E4425FCC6D508D0 /* Pods-Tests-acknowledgements.plist */,
-				399CCDCB4E546C138D475045 /* Pods-Tests-dummy.m */,
-				0E654AF4C4A2BBBCC82BE02A /* Pods-Tests-environment.h */,
-				68E8E6349642003EACF2ECFD /* Pods-Tests-resources.sh */,
-				E5776E702FF5DF50F3B78870 /* Pods-Tests.debug.xcconfig */,
-				A93590EB15062D27964833C1 /* Pods-Tests.release.xcconfig */,
+				2D677B3311A79F0DA6B3225B /* Pods-Tests-acknowledgements.markdown */,
+				9D4AC17BCE7734146337F3DD /* Pods-Tests-acknowledgements.plist */,
+				6254524222AA74AE4ECE5B96 /* Pods-Tests-dummy.m */,
+				59E47C7C802BD150F2DC4D9B /* Pods-Tests-environment.h */,
+				163401C25AE3E4BEE50A8156 /* Pods-Tests-resources.sh */,
+				10522350A7541196764DE1A5 /* Pods-Tests.debug.xcconfig */,
+				63097CC45F6B3871134C1214 /* Pods-Tests.release.xcconfig */,
 			);
 			name = "Pods-Tests";
 			path = "Target Support Files/Pods-Tests";
 			sourceTree = "<group>";
 		};
-		FC71A735AA829AD2E3D07096 /* Pod */ = {
+		B7F03BF7BA9581DA3C96009A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1F4F5F57825D4E4974D7562 /* Classes */,
+				0B6D4D694060D03170B62C38 /* DVATableViewDatasource.bundle */,
+				A1D86AA9A569FBCC37BE37D6 /* DVATableViewDatasource.bundle */,
+				A8E71FCCC46A79BCA7F89260 /* libPods-DVATableViewDatasource.a */,
+				50BCBB82B3973402885D1B4F /* libPods-DVATableViewDatasource-DVATableViewDatasource.a */,
+				BEA627BEC906C241B3ADB822 /* libPods-Tests.a */,
+				07596768607342A159B6A06A /* libPods-Tests-DVATableViewDatasource.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C05221A19C60F9C5E2E02225 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				347AD2089F85E5883491F766 /* DVAArrayDataSourceForTableView.h */,
+				C7D6E6A2370BFF00A081B501 /* DVAArrayDataSourceForTableView.m */,
+				FF675D2E4C5FA2203C049206 /* DVAProtocolDataSourceForTableView.h */,
+				6EB054A04BB668448097B496 /* DVAProtocolDataSourceForTableView.m */,
+				4CDC8A7856322D90F2491AED /* Protocols */,
+				06AB791DCF219804EA220B25 /* Subclasses */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DAC19AD4FA981F1C8FF1F2EF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C05221A19C60F9C5E2E02225 /* Classes */,
 			);
 			path = Pod;
+			sourceTree = "<group>";
+		};
+		DEBC0484454D590C9D1DB8C5 = {
+			isa = PBXGroup;
+			children = (
+				26429B4DBFF520FD31AA6655 /* Podfile */,
+				016F0896F3425BF3B9B748DD /* Development Pods */,
+				75D01684B6BBA713856A690F /* Frameworks */,
+				B7F03BF7BA9581DA3C96009A /* Products */,
+				0824CB1CDACF933B386D3645 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FD7E5B98936D31413D88CCA3 /* DVATableViewDatasource */ = {
+			isa = PBXGroup;
+			children = (
+				DAC19AD4FA981F1C8FF1F2EF /* Pod */,
+				77AD9E3490CA3D21EB37E4F7 /* Support Files */,
+			);
+			name = DVATableViewDatasource;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8AB68BBB8FAC155E03D2951A /* Headers */ = {
+		97583EB6E7BDD54CEF4C2FC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5B39E2F7CD780A1B6B8DEC /* DVAArrayDataSourceForTableView.h in Headers */,
-				B8EA1D6A07119E666704162C /* DVATableViewCellIdentifierProtocol.h in Headers */,
-				C1F325B6B0C4F19B1E5BB9A8 /* DVATableViewCellModel.h in Headers */,
-				1076838D4077EF192B992413 /* DVATableViewConfigurableCellProtocol.h in Headers */,
-				362ED2F59D1FECB9701C6B70 /* DVATableViewModel.h in Headers */,
-				7C9BA7E01992FCCEFADF06AD /* DVATableViewSectionModel.h in Headers */,
-				5F7A1FBD26A1FA9A2F2C229E /* DVAViewModelDataSourceProtocol.h in Headers */,
-				E4E0E45AFFCF6568CAE2561A /* NSArray+DVAViewModelDatasource.h in Headers */,
-				F1C2049A4DE0E7B7075DBBD9 /* NSDictionary+DVAViewModelDatasource.h in Headers */,
+				819652094B2B17DA37B8E9BA /* DVAArrayDataSourceForTableView.h in Headers */,
+				6AA3F2FCBE3469810FBB3005 /* DVAProtocolDataSourceForTableView.h in Headers */,
+				3E256422C2DD886AA58DD8F3 /* DVATableViewCellModel.h in Headers */,
+				942F92C792DCA829DEFAA466 /* DVATableViewCellProtocol.h in Headers */,
+				B1CE109606A43007D1603C05 /* DVATableViewModel.h in Headers */,
+				AFF7DCAEBE808DF38DE8C0A5 /* DVATableViewModelDatasource.h in Headers */,
+				4488E6209635B003CBD5C810 /* DVATableViewModelProtocol.h in Headers */,
+				02FAA4EF9A6A677C5F953ED7 /* DVATableViewSectionModel.h in Headers */,
+				27CCF5F189FCD133226EA0D2 /* NSArray+DVATableViewModelDatasource.h in Headers */,
+				E22FF92D7942C3054F46CAA8 /* NSDictionary+DVATableViewModelDatasource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB4D745D6DC09CCBE2873F71 /* Headers */ = {
+		9C557E4830B795F47A7A6F40 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87F6273E9E053B9B1925A66 /* DVAArrayDataSourceForTableView.h in Headers */,
-				400275D323452686A3B54B93 /* DVATableViewCellIdentifierProtocol.h in Headers */,
-				02E090117A116A6AD3649EBE /* DVATableViewCellModel.h in Headers */,
-				1AA34A3A92F7F5BCA1222771 /* DVATableViewConfigurableCellProtocol.h in Headers */,
-				7BFFF1E558B8BEBFE63D43AB /* DVATableViewModel.h in Headers */,
-				3BB52FA55A3EE9347C026333 /* DVATableViewSectionModel.h in Headers */,
-				897D9A02FA554D71839E23BA /* DVAViewModelDataSourceProtocol.h in Headers */,
-				B11DD8195A31F666A7CD8795 /* NSArray+DVAViewModelDatasource.h in Headers */,
-				3AA7706EC7CB3333A1D4C63B /* NSDictionary+DVAViewModelDatasource.h in Headers */,
+				F7858E437A3CA855BA74C34A /* DVAArrayDataSourceForTableView.h in Headers */,
+				D79FBED8E6EC0A52ED610554 /* DVAProtocolDataSourceForTableView.h in Headers */,
+				17AC04E308955CEEDF6141A3 /* DVATableViewCellModel.h in Headers */,
+				381A7CE792B585E2A4F06F19 /* DVATableViewCellProtocol.h in Headers */,
+				4620E2AD5D613A19283FA89C /* DVATableViewModel.h in Headers */,
+				1D3A20B3F02A40746AE41CF1 /* DVATableViewModelDatasource.h in Headers */,
+				A832E8EF1E61D003BC1C440D /* DVATableViewModelProtocol.h in Headers */,
+				88B7F29DA0D54AD84DC5EEFB /* DVATableViewSectionModel.h in Headers */,
+				3640AF7056A564AEC9EE265D /* NSArray+DVATableViewModelDatasource.h in Headers */,
+				EC69C049CA31992297B282C5 /* NSDictionary+DVATableViewModelDatasource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1A74418923D42D6E056B131B /* Pods-Tests-DVATableViewDatasource */ = {
+		027F4D86E204134D4835DD7D /* Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91A21DF41E08CCA28776CA86 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource" */;
+			buildConfigurationList = 28624BB41D1F5B4299AA11F9 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource" */;
 			buildPhases = (
-				357A10CD819B4FB41C3AFCFC /* Sources */,
-				6A523C9260B05F56BF910A1A /* Frameworks */,
-				8AB68BBB8FAC155E03D2951A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				54FB2E4B8DCCF03DB35762F6 /* PBXTargetDependency */,
-			);
-			name = "Pods-Tests-DVATableViewDatasource";
-			productName = "Pods-Tests-DVATableViewDatasource";
-			productReference = B53BDF187F30ABEB8FAE4E44 /* libPods-Tests-DVATableViewDatasource.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		2AF6705CA64E7B87FEBCCEBD /* Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 913CE619A2C19DBF605DCB35 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource" */;
-			buildPhases = (
-				B2EDFC4930721533029A26FE /* Sources */,
-				46A57386B8538CA9C1AC50D2 /* Frameworks */,
-				9E86600EC7F0F906330348BE /* Resources */,
+				705AF54E134684A3AA4F5242 /* Sources */,
+				592D55BDB35D56FFCDA0CC8F /* Frameworks */,
+				73A60C0DC5405C5C9C128E6C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -395,16 +403,34 @@
 			);
 			name = "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource";
 			productName = "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource";
-			productReference = 3D227D1307FA5D870101041E /* DVATableViewDatasource.bundle */;
+			productReference = A1D86AA9A569FBCC37BE37D6 /* DVATableViewDatasource.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		3F203A13E9F4A8D7E35FA587 /* Pods-Tests-DVATableViewDatasource-DVATableViewDatasource */ = {
+		2BC8B99A76E4598293024EE1 /* Pods-DVATableViewDatasource-DVATableViewDatasource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41B6FF93B83BAE4C044A2E61 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource" */;
+			buildConfigurationList = 459BAF93D373A3A5819082A0 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource" */;
 			buildPhases = (
-				F7DBD98889566A02B2BFDD9E /* Sources */,
-				65FFF424119AEB14BB1A5C0B /* Frameworks */,
-				FE581AD65894B71B36955C47 /* Resources */,
+				64C12E945BCB1B12CAFC41DE /* Sources */,
+				7317544BA6C65C93E02A24D9 /* Frameworks */,
+				97583EB6E7BDD54CEF4C2FC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				761B42876DB5E6D8753CE454 /* PBXTargetDependency */,
+			);
+			name = "Pods-DVATableViewDatasource-DVATableViewDatasource";
+			productName = "Pods-DVATableViewDatasource-DVATableViewDatasource";
+			productReference = 50BCBB82B3973402885D1B4F /* libPods-DVATableViewDatasource-DVATableViewDatasource.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		32F7FD987FFDFFA7B22F7BD5 /* Pods-Tests-DVATableViewDatasource-DVATableViewDatasource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7BFA8D667968A4E7550F56 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource" */;
+			buildPhases = (
+				2077DAAED810FE02679ADA72 /* Sources */,
+				026D4149552EAD390A998D46 /* Frameworks */,
+				96E3841EF0134B5827B47C0B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -412,100 +438,100 @@
 			);
 			name = "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource";
 			productName = "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource";
-			productReference = 8B240F8413FA172223C64F19 /* DVATableViewDatasource.bundle */;
+			productReference = 0B6D4D694060D03170B62C38 /* DVATableViewDatasource.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		87EA8FCCFCF8A96784B43506 /* Pods-DVATableViewDatasource-DVATableViewDatasource */ = {
+		44BA0CA508FEF03AA5CED158 /* Pods-Tests-DVATableViewDatasource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8E6F055494567283767DF57 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource" */;
+			buildConfigurationList = 64954E282F36FC04F58F12D9 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource" */;
 			buildPhases = (
-				8C4C0F5FB7908CC85F5A2A72 /* Sources */,
-				F7A45F13A66F6B05F9E06C94 /* Frameworks */,
-				FB4D745D6DC09CCBE2873F71 /* Headers */,
+				7918D92D0A740F662363BAB1 /* Sources */,
+				7E1E606D51848498C2F828FB /* Frameworks */,
+				9C557E4830B795F47A7A6F40 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3F4335E0A29E1775F571A0D0 /* PBXTargetDependency */,
+				12CA439F0C648861CA971A01 /* PBXTargetDependency */,
 			);
-			name = "Pods-DVATableViewDatasource-DVATableViewDatasource";
-			productName = "Pods-DVATableViewDatasource-DVATableViewDatasource";
-			productReference = 1B00906D5B1EC4FDC9BB5662 /* libPods-DVATableViewDatasource-DVATableViewDatasource.a */;
+			name = "Pods-Tests-DVATableViewDatasource";
+			productName = "Pods-Tests-DVATableViewDatasource";
+			productReference = 07596768607342A159B6A06A /* libPods-Tests-DVATableViewDatasource.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CD6ACEB6C8FCFAC8C0C4FC9A /* Pods-DVATableViewDatasource */ = {
+		65AD7E61BA0E89313CC92109 /* Pods-Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B633B51DEBFB938742F24AED /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource" */;
+			buildConfigurationList = 507D874CBABE5E08189D2AB6 /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
 			buildPhases = (
-				9C6FA06E845E75E9F7D1F45B /* Sources */,
-				4E7A250A4BA51A8E53FD0A05 /* Frameworks */,
+				77A7369328A10DF1B96ACFE3 /* Sources */,
+				171E7CA11B4590A35A2E8F27 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				94F6C8282B82376AF3DC610E /* PBXTargetDependency */,
-			);
-			name = "Pods-DVATableViewDatasource";
-			productName = "Pods-DVATableViewDatasource";
-			productReference = 39387236381847F157806284 /* libPods-DVATableViewDatasource.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D85A65A05FB57CDCDC01B96D /* Pods-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AED2902EF668E91BC931B2CE /* Build configuration list for PBXNativeTarget "Pods-Tests" */;
-			buildPhases = (
-				65F266A601C5711D8643ACA0 /* Sources */,
-				4C7EC4F752C49D1AA7B836BA /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5330CCA532F3959D38D5A549 /* PBXTargetDependency */,
+				12E5D45A748057D7CD4E1250 /* PBXTargetDependency */,
 			);
 			name = "Pods-Tests";
 			productName = "Pods-Tests";
-			productReference = 3B95F66F2C76E5F82D3FA9DA /* libPods-Tests.a */;
+			productReference = BEA627BEC906C241B3ADB822 /* libPods-Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B26BFAA3DFEBDFD355D78526 /* Pods-DVATableViewDatasource */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FE41FD9C27B014A41C91793 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource" */;
+			buildPhases = (
+				71475511736E0E5798FC09FF /* Sources */,
+				6E54E11E7F2F4DD68B647CD6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653B6293745CF6CCEF2783CE /* PBXTargetDependency */,
+			);
+			name = "Pods-DVATableViewDatasource";
+			productName = "Pods-DVATableViewDatasource";
+			productReference = A8E71FCCC46A79BCA7F89260 /* libPods-DVATableViewDatasource.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0329B985595ADF61C59A53CB /* Project object */ = {
+		448F4F59AE1D6C71D1806DE2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = C2E3F4879E396487E0FBDC29 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 52B2A76F1A2241215ACF2F5A /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = AEEFD1FF3B10CA613DCDFFEE;
-			productRefGroup = 9B9FFA71A372D0183495B51B /* Products */;
+			mainGroup = DEBC0484454D590C9D1DB8C5;
+			productRefGroup = B7F03BF7BA9581DA3C96009A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CD6ACEB6C8FCFAC8C0C4FC9A /* Pods-DVATableViewDatasource */,
-				87EA8FCCFCF8A96784B43506 /* Pods-DVATableViewDatasource-DVATableViewDatasource */,
-				2AF6705CA64E7B87FEBCCEBD /* Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource */,
-				D85A65A05FB57CDCDC01B96D /* Pods-Tests */,
-				1A74418923D42D6E056B131B /* Pods-Tests-DVATableViewDatasource */,
-				3F203A13E9F4A8D7E35FA587 /* Pods-Tests-DVATableViewDatasource-DVATableViewDatasource */,
+				B26BFAA3DFEBDFD355D78526 /* Pods-DVATableViewDatasource */,
+				2BC8B99A76E4598293024EE1 /* Pods-DVATableViewDatasource-DVATableViewDatasource */,
+				027F4D86E204134D4835DD7D /* Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource */,
+				65AD7E61BA0E89313CC92109 /* Pods-Tests */,
+				44BA0CA508FEF03AA5CED158 /* Pods-Tests-DVATableViewDatasource */,
+				32F7FD987FFDFFA7B22F7BD5 /* Pods-Tests-DVATableViewDatasource-DVATableViewDatasource */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9E86600EC7F0F906330348BE /* Resources */ = {
+		73A60C0DC5405C5C9C128E6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE581AD65894B71B36955C47 /* Resources */ = {
+		96E3841EF0134B5827B47C0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -515,97 +541,139 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		357A10CD819B4FB41C3AFCFC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63D945BCDF056ECBA97AEE39 /* DVAArrayDataSourceForTableView.m in Sources */,
-				E6F0B0A2529690F8C4B742D2 /* DVATableViewCellModel.m in Sources */,
-				A94C9665BA4389831F21E158 /* DVATableViewModel.m in Sources */,
-				B85EC62F1F4345452618D2C3 /* DVATableViewSectionModel.m in Sources */,
-				8C119A193DA39B4CDC26A271 /* NSArray+DVAViewModelDatasource.m in Sources */,
-				0EF93A6851C70340931EB20E /* NSDictionary+DVAViewModelDatasource.m in Sources */,
-				A59C1176837261BD58208670 /* Pods-Tests-DVATableViewDatasource-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65F266A601C5711D8643ACA0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				27E93BDC3A42F99D45DBEC97 /* Pods-Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8C4C0F5FB7908CC85F5A2A72 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9797CB1D05ABFAB0836B41C /* DVAArrayDataSourceForTableView.m in Sources */,
-				F9A9AD324B8AA60EF3771667 /* DVATableViewCellModel.m in Sources */,
-				9BBCA7D4C23448F70C43C2FE /* DVATableViewModel.m in Sources */,
-				FFAD03460E713C93D2FF1CC3 /* DVATableViewSectionModel.m in Sources */,
-				744764D63C2C63C302F54730 /* NSArray+DVAViewModelDatasource.m in Sources */,
-				5EA961DCB54CC7A906F11EA6 /* NSDictionary+DVAViewModelDatasource.m in Sources */,
-				B5BF61E4E8B663CD4CCD35DE /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9C6FA06E845E75E9F7D1F45B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AC33625E18C2CEFC4E37511 /* Pods-DVATableViewDatasource-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B2EDFC4930721533029A26FE /* Sources */ = {
+		2077DAAED810FE02679ADA72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7DBD98889566A02B2BFDD9E /* Sources */ = {
+		64C12E945BCB1B12CAFC41DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DCB93F544836BD5567AFE6F /* DVAArrayDataSourceForTableView.m in Sources */,
+				DA468F2B698B300AE333537E /* DVAProtocolDataSourceForTableView.m in Sources */,
+				548624AA74E8BB7806D87C58 /* DVATableViewCellModel.m in Sources */,
+				12E43A4CAD9A3AF00AD8410E /* DVATableViewModel.m in Sources */,
+				6EBFB9E6927EB638BE23384F /* DVATableViewSectionModel.m in Sources */,
+				4107F8BDEE76D851CD41F1B5 /* NSArray+DVATableViewModelDatasource.m in Sources */,
+				DD04BEFB8E793C7EC48441C0 /* NSDictionary+DVATableViewModelDatasource.m in Sources */,
+				CA059E2FAC9C98A2002A38B5 /* Pods-DVATableViewDatasource-DVATableViewDatasource-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		705AF54E134684A3AA4F5242 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71475511736E0E5798FC09FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1D8E24AFC0631BAF9F65A4B /* Pods-DVATableViewDatasource-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77A7369328A10DF1B96ACFE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3AB0DD9171F147082F50E5 /* Pods-Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7918D92D0A740F662363BAB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03DF8CA01C33AF7F5508141D /* DVAArrayDataSourceForTableView.m in Sources */,
+				748E226308EB91347FDE48B7 /* DVAProtocolDataSourceForTableView.m in Sources */,
+				12E81398972D7E99174AE214 /* DVATableViewCellModel.m in Sources */,
+				06BB7BA9E43BBE0F6DFE5F11 /* DVATableViewModel.m in Sources */,
+				F4BC920633CB73BD6E87D1E7 /* DVATableViewSectionModel.m in Sources */,
+				64B188CA29E7E5B768224162 /* NSArray+DVATableViewModelDatasource.m in Sources */,
+				00EFC0717EA2E7D63444D5A3 /* NSDictionary+DVATableViewModelDatasource.m in Sources */,
+				619B54139C16D74039A62DAE /* Pods-Tests-DVATableViewDatasource-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3F4335E0A29E1775F571A0D0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource";
-			target = 2AF6705CA64E7B87FEBCCEBD /* Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource */;
-			targetProxy = 7217338016543680E20AFB23 /* PBXContainerItemProxy */;
-		};
-		5330CCA532F3959D38D5A549 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Tests-DVATableViewDatasource";
-			target = 1A74418923D42D6E056B131B /* Pods-Tests-DVATableViewDatasource */;
-			targetProxy = 990F750B5C1EED47B58CB8DF /* PBXContainerItemProxy */;
-		};
-		54FB2E4B8DCCF03DB35762F6 /* PBXTargetDependency */ = {
+		12CA439F0C648861CA971A01 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource";
-			target = 3F203A13E9F4A8D7E35FA587 /* Pods-Tests-DVATableViewDatasource-DVATableViewDatasource */;
-			targetProxy = 9EA1997749F315E1971BB6EF /* PBXContainerItemProxy */;
+			target = 32F7FD987FFDFFA7B22F7BD5 /* Pods-Tests-DVATableViewDatasource-DVATableViewDatasource */;
+			targetProxy = F49C3964EFC53EEDBEB707A8 /* PBXContainerItemProxy */;
 		};
-		94F6C8282B82376AF3DC610E /* PBXTargetDependency */ = {
+		12E5D45A748057D7CD4E1250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Tests-DVATableViewDatasource";
+			target = 44BA0CA508FEF03AA5CED158 /* Pods-Tests-DVATableViewDatasource */;
+			targetProxy = 3BDCC52549AA0E2E36C4168A /* PBXContainerItemProxy */;
+		};
+		653B6293745CF6CCEF2783CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DVATableViewDatasource-DVATableViewDatasource";
-			target = 87EA8FCCFCF8A96784B43506 /* Pods-DVATableViewDatasource-DVATableViewDatasource */;
-			targetProxy = AF4AF439E3128C43A30A6E0F /* PBXContainerItemProxy */;
+			target = 2BC8B99A76E4598293024EE1 /* Pods-DVATableViewDatasource-DVATableViewDatasource */;
+			targetProxy = EB5ABFB3480D4C093F2230F5 /* PBXContainerItemProxy */;
+		};
+		761B42876DB5E6D8753CE454 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource";
+			target = 027F4D86E204134D4835DD7D /* Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource */;
+			targetProxy = 01D18F6E19ECF2526ADC634C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		478554576C255F05B690E2B9 /* Debug */ = {
+		1C06781D2AE995DAEF9AFE8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5776E702FF5DF50F3B78870 /* Pods-Tests.debug.xcconfig */;
+			baseConfigurationReference = 79B9E5E2CF8F797DEB313C93 /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DVATableViewDatasource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		1D4C113FF84DA8A94F2DE3BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E294420646CEAAE849A0D7EA /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DVATableViewDatasource-DVATableViewDatasource/Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		280A2CFD65B63B709F8939C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E294420646CEAAE849A0D7EA /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = DVATableViewDatasource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		3E061A22CB5FFDFBB730866B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10522350A7541196764DE1A5 /* Pods-Tests.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -619,12 +687,56 @@
 			};
 			name = Debug;
 		};
-		579DE6CB82536AA408C28279 /* Debug */ = {
+		44756B9B1D3BC35512AB41B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 279928A811DF50DAB2523F0F /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
+			baseConfigurationReference = E294420646CEAAE849A0D7EA /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DVATableViewDatasource-DVATableViewDatasource/Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch";
+				PRODUCT_NAME = DVATableViewDatasource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		498B1C36752994F1BA713240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93C9AB4A25BF25FF90B0840 /* Pods-DVATableViewDatasource.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		78681E4E889BA94340594165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B1174FD0E6D56DC21277E8 /* Pods-DVATableViewDatasource.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AC995D8689E1C28C4E3C9A16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B9E5E2CF8F797DEB313C93 /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -635,9 +747,41 @@
 			};
 			name = Debug;
 		};
-		5FC3CC8ED6CE04359336D416 /* Release */ = {
+		C1F00C1D0F789BB51D9E4E84 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 279928A811DF50DAB2523F0F /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
+			baseConfigurationReference = 63097CC45F6B3871134C1214 /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C7E4A2E807AA4042E0E861A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B9E5E2CF8F797DEB313C93 /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C900F5F176FA49E4FB142006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79B9E5E2CF8F797DEB313C93 /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = DVATableViewDatasource;
@@ -647,7 +791,7 @@
 			};
 			name = Release;
 		};
-		606DB9718E57A2CC26EF6CFB /* Release */ = {
+		D09004840943499418D8462C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -681,12 +825,12 @@
 			};
 			name = Release;
 		};
-		8E713F97099A760A324F5777 /* Debug */ = {
+		E6FD809AF410C898AC2617DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F6D3737F5371F7B0AA5E7C /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
+			baseConfigurationReference = E294420646CEAAE849A0D7EA /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-DVATableViewDatasource-DVATableViewDatasource/Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -697,51 +841,7 @@
 			};
 			name = Debug;
 		};
-		97B9966D7A8FA6BD26F35888 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F4ADCBF162699AB90AE7BC9 /* Pods-DVATableViewDatasource.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A16CD20AB5E0A63F3CD23FF8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F6D3737F5371F7B0AA5E7C /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DVATableViewDatasource;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		A2BDCAB8A87A35B67B894D71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F6D3737F5371F7B0AA5E7C /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Tests-DVATableViewDatasource/Pods-Tests-DVATableViewDatasource-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		A9966A9BF928A9E0858416EB /* Debug */ = {
+		EB2174E53949770E6401B180 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -780,145 +880,73 @@
 			};
 			name = Debug;
 		};
-		C0520D6AC0E20D66ECB24B1F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 279928A811DF50DAB2523F0F /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DVATableViewDatasource;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E0EDB59208B0435DE32F3D32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A93590EB15062D27964833C1 /* Pods-Tests.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		E2EE5C468872CDCF64F94F1D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7F6D3737F5371F7B0AA5E7C /* Pods-Tests-DVATableViewDatasource-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = DVATableViewDatasource;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E33E817948B59C29BA477998 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 279928A811DF50DAB2523F0F /* Pods-DVATableViewDatasource-DVATableViewDatasource-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-DVATableViewDatasource-DVATableViewDatasource/Pods-DVATableViewDatasource-DVATableViewDatasource-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		FAC1A5EA308591EFC081833E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 922CA44867B7CCB08331A98E /* Pods-DVATableViewDatasource.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41B6FF93B83BAE4C044A2E61 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource" */ = {
+		28624BB41D1F5B4299AA11F9 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E2EE5C468872CDCF64F94F1D /* Debug */,
-				A16CD20AB5E0A63F3CD23FF8 /* Release */,
+				44756B9B1D3BC35512AB41B7 /* Debug */,
+				280A2CFD65B63B709F8939C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		913CE619A2C19DBF605DCB35 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource-DVATableViewDatasource" */ = {
+		459BAF93D373A3A5819082A0 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C0520D6AC0E20D66ECB24B1F /* Debug */,
-				5FC3CC8ED6CE04359336D416 /* Release */,
+				E6FD809AF410C898AC2617DA /* Debug */,
+				1D4C113FF84DA8A94F2DE3BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91A21DF41E08CCA28776CA86 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource" */ = {
+		507D874CBABE5E08189D2AB6 /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E713F97099A760A324F5777 /* Debug */,
-				A2BDCAB8A87A35B67B894D71 /* Release */,
+				3E061A22CB5FFDFBB730866B /* Debug */,
+				C1F00C1D0F789BB51D9E4E84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AED2902EF668E91BC931B2CE /* Build configuration list for PBXNativeTarget "Pods-Tests" */ = {
+		52B2A76F1A2241215ACF2F5A /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				478554576C255F05B690E2B9 /* Debug */,
-				E0EDB59208B0435DE32F3D32 /* Release */,
+				EB2174E53949770E6401B180 /* Debug */,
+				D09004840943499418D8462C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B633B51DEBFB938742F24AED /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource" */ = {
+		64954E282F36FC04F58F12D9 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97B9966D7A8FA6BD26F35888 /* Debug */,
-				FAC1A5EA308591EFC081833E /* Release */,
+				AC995D8689E1C28C4E3C9A16 /* Debug */,
+				C7E4A2E807AA4042E0E861A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2E3F4879E396487E0FBDC29 /* Build configuration list for PBXProject "Pods" */ = {
+		6D7BFA8D667968A4E7550F56 /* Build configuration list for PBXNativeTarget "Pods-Tests-DVATableViewDatasource-DVATableViewDatasource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9966A9BF928A9E0858416EB /* Debug */,
-				606DB9718E57A2CC26EF6CFB /* Release */,
+				1C06781D2AE995DAEF9AFE8E /* Debug */,
+				C900F5F176FA49E4FB142006 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F8E6F055494567283767DF57 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource-DVATableViewDatasource" */ = {
+		8FE41FD9C27B014A41C91793 /* Build configuration list for PBXNativeTarget "Pods-DVATableViewDatasource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				579DE6CB82536AA408C28279 /* Debug */,
-				E33E817948B59C29BA477998 /* Release */,
+				78681E4E889BA94340594165 /* Debug */,
+				498B1C36752994F1BA713240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0329B985595ADF61C59A53CB /* Project object */;
+	rootObject = 448F4F59AE1D6C71D1806DE2 /* Project object */;
 }

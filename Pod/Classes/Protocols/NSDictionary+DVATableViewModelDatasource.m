@@ -6,9 +6,9 @@
 //
 //
 
-#import "NSDictionary+DVAViewModelDatasource.h"
+#import "NSDictionary+DVATableViewModelDatasource.h"
 
-@implementation NSDictionary (DVAViewModelDatasource)
+@implementation NSDictionary (DVATableViewModelDatasource)
 
 #pragma mark - Helper
 
@@ -19,17 +19,17 @@
 
 #pragma mark - Protocol DVAViewModelDatasource
 
-- (NSInteger)numberOfSectionsInViewModel{
+- (NSInteger)dva_numberOfSectionsInViewModel{
     return [[self allKeys] count];
 }
-- (NSInteger)numberOfViewModelsInSection:(NSInteger)section{
+- (NSInteger)dva_numberOfViewModelsInSection:(NSInteger)section{
     NSArray*viewModels=[self viewModelsForSection:section];
     if (viewModels) {
         return [viewModels count];
     }
     return 0;
 }
-- (id)viewModelForRowAtIndexPath:(NSIndexPath *)indexPath
+- (id)dva_viewModelForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray*viewModels=[self viewModelsForSection:indexPath.section];
     if (viewModels                  &&

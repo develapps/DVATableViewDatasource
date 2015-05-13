@@ -1,5 +1,5 @@
 //
-//  DVAArrayDataSourceForTableView.h
+//  DVAProtocolDataSourceForTableView
 //  Close2Me
 //
 //  Created by Rafa Barberá on 08/05/14.
@@ -9,21 +9,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "DVATableViewModel.h"
 
+#import "DVATableViewModelDatasource.h"
+#import "DVATableViewModelProtocol.h"
+#import "DVATableViewCellProtocol.h"
 
-static NSString* const kDVATableViewModelSectionHeader  = @"HEADER";
-static NSString* const kDVATableViewModelSectionFooter  = @"FOOTER";
-static NSString* const kDVATableViewModelCellIdentifier = @"CELLID";
-static NSString* const kDVATableViewModelCellUserData   = @"CELLUSERDATA";
-static NSString* const kDVATableViewModelCells          = @"CELLS";
-
-/**
- This will configure the cell.
-
- @since 1.0
- */
-typedef void(^cellBlock)(id item, id cell, NSIndexPath *indexPath);
 
 /**
  This class implements the tableView datasource to configure cells outside the cells, so the cells do not know anything about the model.
@@ -185,150 +175,23 @@ typedef void(^cellBlock)(id item, id cell, NSIndexPath *indexPath);
  
  @since 1.0
  */
-@interface DVAArrayDataSourceForTableView : NSObject<UITableViewDataSource>
-
-///------------------------------------------------
-/// @name One-step configuration method
-///------------------------------------------------
-
-
-/**
- This method registers the NIBs at the tableView, setups the configuration blocks and prepares the datasource. After that, call reloadData.
- 
- @param tableView the tableView
- @param model     the viewModel
- 
- @return a datasource
- 
- @since 1.0
- */
--(instancetype)initWithTableView:(UITableView*)tableView andModel:(DVATableViewModel*)model;
+@interface DVAProtocolDataSourceForTableView : NSObject<UITableViewDataSource>
 
 ///------------------------------------------------
 /// @name Properties
 ///------------------------------------------------
 
-/**
- Enable debugging. Default is NO.
- 
- @since 1.0
- */
-@property (nonatomic)           BOOL        debug;
-/**
- No data view. Setup if a no data.
- 
- @since 1.0
- */
-@property (nonatomic, strong)   UIView      *noDataView;
-
-#pragma mark - Cell identifier and configuration registering
-
-///------------------------------------------------
-/// @name Cell configuration
-///------------------------------------------------
 
 /**
- This method registers a configuration block for a cell identifier. No NIB is registered here
+ @author Pablo Romeu, 15-05-12 16:05:25
  
-    [dataSource registercellIdentifier:cellIdentifier cellConfiguration:^(id item, id cell, NSIndexPath *indexPath) {
-        typeof(self) self = wSelf;
-        // Configure the cell
-    }];
+ Implements a datasource for the viewModel.
  
- @param cellIdentifier the cell identifier
- @param block          the cell block.
+ @warning Each viewModel must implement DVATableViewConfigurableCellProtocol and each cell must implement DVATableViewCellIdentifierProtocol
  
- @since 1.0
+ @since 1.1.0
  */
-- (void)registercellIdentifier:(NSString *)cellIdentifier cellConfiguration:(cellBlock)block;
-/**
- This method registers the nib, the cell identifier and the configuration block, all in once.
- 
- @param tableView      the tableView to register to
- @param cellIdentifier the cell identifier
- @param block          the block
- @see registercellIdentifier:cellConfiguration:
- @see registerNibAtTableView:andCellClass:cellConfiguration:
- @since 1.0
- */
-- (void)registerNibAtTableView:(UITableView*)tableView andCellIdentifier:(NSString *)cellIdentifier cellConfiguration:(cellBlock)block;
-
-/**
- This method registers the nib, the cell class and the configuration block, all in once.
-
- 
- @param tableView the tableview to register to
- @param cellClass the cell class
- @param block     the block
- @see registercellIdentifier:cellConfiguration:
- @see registerNibAtTableView:andCellIdentifier:cellConfiguration:
- @since 1.0
- */
-- (void)registerNibAtTableView:(UITableView*)tableView andCellClass:(Class)cellClass cellConfiguration:(cellBlock)block;
-
-///------------------------------------------------
-/// @name Datasource configuration
-///------------------------------------------------
-
-#pragma mark - Setup cells model
-
-/**
- Returns the items for the first section.
- 
- @return the model items
- 
- @since 1.0
- */
-- (NSArray*)items;
-/**
- Setups a simple tableview with just one section, an identifier and these items. Useful if it is a simple tableView with just one section and identifier
- @param     items the items to configure the cells
- @warning   Do not use this method if you intend to use more than one cell type or more than a section. 
- @warning   This method does not use the cellIdentifier property so you do not need to use a subclass of "DVATableViewCellModel"
- @see setItems:withCellIdentifiers:perSection:
- @since 1.0
- */
-- (void)setItems:(NSArray*)items;
-/**
- Setups a section of a tableView
- 
- @param items       items to configure the cells
- @param identifiers the cell identifiers for each cell
- @param section     the section
- 
- @since 1.0
- */
-- (void)setItems:(NSArray*)items withCellIdentifiers:(NSArray*)identifiers perSection:(NSInteger)section;
-/**
- Helper to simplify the cellIdentifier selection
- 
- @param items       the items
- @param identifiers the identifier
- @param section     the Section
- @see setItems:withCellIdentifiers:perSection:
- 
- @since 1.0
- */
-- (void)setItems:(NSArray*)items withCellIdentifier:(NSString*)identifier perSection:(NSInteger)section;
-
-/**
- Sets a full tableViewModel
- 
- @param tableViewModel the model
- 
- @since 1.0
- */
-- (void)setTableViewModel:(DVATableViewModel*)tableViewModel;
-
-
-/**
- Setup with a simple array
- 
- @param array the array
- 
- @since 1.0
- */
--(void)setTableViewArray:(NSArray *)array;
+@property (nonatomic, weak) id <DVATableViewModelDatasource> viewModelDataSource;
 
 #pragma mark - Headers and footers
 

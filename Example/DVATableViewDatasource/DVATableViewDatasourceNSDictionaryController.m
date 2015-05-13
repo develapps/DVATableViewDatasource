@@ -6,20 +6,20 @@
 //  Copyright (c) 2015 Pablo Romeu. All rights reserved.
 //
 
-#import "DVATableViewController.h"
-#import <DVAArrayDataSourceForTableView.h>
-#import <NSDictionary+DVAViewModelDatasource.h>
+#import "DVATableViewDatasourceNSDictionaryController.h"
+#import <DVAProtocolDataSourceForTableView.h>
+#import <NSDictionary+DVATableViewModelDatasource.h>
 #import "DVATestCellModel.h"
 #import "DVATestCellModelTwo.h"
 #import "DVATableViewCell.h"
 #import "DVATableViewCellTwo.h"
 
-@interface DVATableViewController ()
-@property (nonatomic,strong) DVAArrayDataSourceForTableView *datasource;
-@property (nonatomic,strong) NSDictionary                   *viewModelManager;
+@interface DVATableViewDatasourceNSDictionaryController ()
+@property (nonatomic,strong) DVAProtocolDataSourceForTableView  *datasource;
+@property (nonatomic,strong) NSDictionary                       *viewModelManager;
 @end
 
-@implementation DVATableViewController
+@implementation DVATableViewDatasourceNSDictionaryController
 
 - (void)viewDidLoad { 
     [super viewDidLoad];
@@ -35,32 +35,28 @@
     [super viewWillAppear:animated];
     _viewModelManager=[NSDictionary new];
     NSArray*tmp=[NSArray new];
-    for (int i=0; i<10; i++) {
+    for (int i=0; i<4; i++) {
         if (i%2==0) {
             DVATestCellModel*cm=[DVATestCellModel new];
             cm.title=[NSString stringWithFormat:@"Cell %i",i];
-            cm.dva_cellIdentifier=[DVATableViewCell description];
             tmp=[tmp arrayByAddingObject:cm];
         }
         else{
             DVATestCellModelTwo*cm=[DVATestCellModelTwo new];
             cm.title=[NSString stringWithFormat:@"Two %i",i];
-            cm.dva_cellIdentifier=[DVATableViewCellTwo description];
             tmp=[tmp arrayByAddingObject:cm];
         }
     }
     NSArray*tmp2=[NSArray new];
-    for (int i=0; i<1000; i++) {
+    for (int i=0; i<4; i++) {
         if (i%2==0) {
             DVATestCellModel*cm=[DVATestCellModel new];
             cm.title=[NSString stringWithFormat:@"Cell %i",i];
-            cm.dva_cellIdentifier=[DVATableViewCell description];
             tmp2=[tmp2 arrayByAddingObject:cm];
         }
         else{
             DVATestCellModelTwo*cm=[DVATestCellModelTwo new];
             cm.title=[NSString stringWithFormat:@"Two %i",i];
-            cm.dva_cellIdentifier=[DVATableViewCellTwo description];
             tmp2=[tmp2 arrayByAddingObject:cm];
         }
 
@@ -69,13 +65,14 @@
     _viewModelManager=@{@(0):tmp,
                         @(1):tmp2};
     _datasource.viewModelDataSource=_viewModelManager;
-    [_datasource setTitleHeader:@"seccion 1" ForSection:0];
+    [_datasource setTitleHeader:@"section 1" ForSection:0];
+    [_datasource setTitleHeader:@"section 2" ForSection:1];
 }
 
 #pragma mark - Table view data source
 
 -(void)setupDataSource{
-    _datasource=[DVAArrayDataSourceForTableView new];
+    _datasource=[DVAProtocolDataSourceForTableView new];
     self.tableView.dataSource=_datasource;
 }
 

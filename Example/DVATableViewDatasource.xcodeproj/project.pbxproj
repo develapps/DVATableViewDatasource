@@ -14,7 +14,6 @@
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* DVAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* DVAAppDelegate.m */; };
 		6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F59F195388D20070C39A /* Main_iPhone.storyboard */; };
-		6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A2195388D20070C39A /* Main_iPad.storyboard */; };
 		6003F5A7195388D20070C39A /* DVAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* DVAViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
@@ -22,11 +21,12 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		6E70D0301B01E67200F4E98D /* DVATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E70D02F1B01E67200F4E98D /* DVATableViewController.m */; };
+		6E70D0301B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E70D02F1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m */; };
 		6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */; };
 		6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */; };
 		6EA38A651B02506700120FF7 /* DVATableViewCellTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A641B02506700120FF7 /* DVATableViewCellTwo.m */; };
 		6EA38A6A1B02526F00120FF7 /* DVATestCellModelTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A691B02526F00120FF7 /* DVATestCellModelTwo.m */; };
+		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
 		9DE886DDE095E7997D12BF89 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
@@ -56,7 +56,6 @@
 		6003F59C195388D20070C39A /* DVAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVAAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* DVAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVAAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A0195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		6003F5A3195388D20070C39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* DVAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DVAViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* DVAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DVAViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -67,8 +66,8 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		67B99DC11BC53A6F7961E34E /* Pods-DVATableViewDatasource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVATableViewDatasource.release.xcconfig"; path = "Pods/Target Support Files/Pods-DVATableViewDatasource/Pods-DVATableViewDatasource.release.xcconfig"; sourceTree = "<group>"; };
-		6E70D02E1B01E67200F4E98D /* DVATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewController.h; sourceTree = "<group>"; };
-		6E70D02F1B01E67200F4E98D /* DVATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewController.m; sourceTree = "<group>"; };
+		6E70D02E1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewDatasourceNSDictionaryController.h; sourceTree = "<group>"; };
+		6E70D02F1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewDatasourceNSDictionaryController.m; sourceTree = "<group>"; };
 		6EA38A5D1B0249D400120FF7 /* DVATestCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATestCellModel.h; sourceTree = "<group>"; };
 		6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATestCellModel.m; sourceTree = "<group>"; };
 		6EA38A601B024B0C00120FF7 /* DVATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewCell.h; sourceTree = "<group>"; };
@@ -77,6 +76,8 @@
 		6EA38A641B02506700120FF7 /* DVATableViewCellTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCellTwo.m; sourceTree = "<group>"; };
 		6EA38A681B02526F00120FF7 /* DVATestCellModelTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATestCellModelTwo.h; sourceTree = "<group>"; };
 		6EA38A691B02526F00120FF7 /* DVATestCellModelTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATestCellModelTwo.m; sourceTree = "<group>"; };
+		6EDC0E741B03481700CF031D /* DVATableViewDatasourceNSArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewDatasourceNSArrayController.h; sourceTree = "<group>"; };
+		6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewDatasourceNSArrayController.m; sourceTree = "<group>"; };
 		7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		899B2999DC3C354AEFE19E81 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8D98810DB9F6E85440DD2CC7 /* Pods-DVATableViewDatasource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVATableViewDatasource.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVATableViewDatasource/Pods-DVATableViewDatasource.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,12 +151,11 @@
 				6003F59C195388D20070C39A /* DVAAppDelegate.h */,
 				6003F59D195388D20070C39A /* DVAAppDelegate.m */,
 				6003F59F195388D20070C39A /* Main_iPhone.storyboard */,
-				6003F5A2195388D20070C39A /* Main_iPad.storyboard */,
 				6003F5A5195388D20070C39A /* DVAViewController.h */,
 				6003F5A6195388D20070C39A /* DVAViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6EDC0E701B0347A800CF031D /* Tables */,
 				6003F594195388D20070C39A /* Supporting Files */,
-				6EA38A5C1B0249B600120FF7 /* Table */,
 			);
 			path = DVATableViewDatasource;
 			sourceTree = "<group>";
@@ -200,24 +200,22 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		6EA38A5C1B0249B600120FF7 /* Table */ = {
+		6EA38A5C1B0249B600120FF7 /* With two sections - NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				6E70D02E1B01E67200F4E98D /* DVATableViewController.h */,
-				6E70D02F1B01E67200F4E98D /* DVATableViewController.m */,
-				6EA38A661B02525400120FF7 /* Cell1 */,
-				6EA38A671B02525A00120FF7 /* Cell2 */,
+				6E70D02E1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.h */,
+				6E70D02F1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m */,
 			);
-			name = Table;
+			name = "With two sections - NSDictionary";
 			sourceTree = "<group>";
 		};
 		6EA38A661B02525400120FF7 /* Cell1 */ = {
 			isa = PBXGroup;
 			children = (
-				6EA38A5D1B0249D400120FF7 /* DVATestCellModel.h */,
-				6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */,
 				6EA38A601B024B0C00120FF7 /* DVATableViewCell.h */,
 				6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */,
+				6EA38A5D1B0249D400120FF7 /* DVATestCellModel.h */,
+				6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */,
 			);
 			name = Cell1;
 			sourceTree = "<group>";
@@ -231,6 +229,50 @@
 				6EA38A691B02526F00120FF7 /* DVATestCellModelTwo.m */,
 			);
 			name = Cell2;
+			sourceTree = "<group>";
+		};
+		6EDC0E701B0347A800CF031D /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				6EDC0E721B0347B100CF031D /* Using Protocol */,
+				6EDC0E711B0347AC00CF031D /* Using Configuration Array */,
+			);
+			name = Tables;
+			sourceTree = "<group>";
+		};
+		6EDC0E711B0347AC00CF031D /* Using Configuration Array */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Using Configuration Array";
+			sourceTree = "<group>";
+		};
+		6EDC0E721B0347B100CF031D /* Using Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6EDC0E781B03485600CF031D /* Cells and Models */,
+				6EDC0E731B0347C800CF031D /* With one section - NSArray */,
+				6EA38A5C1B0249B600120FF7 /* With two sections - NSDictionary */,
+			);
+			name = "Using Protocol";
+			sourceTree = "<group>";
+		};
+		6EDC0E731B0347C800CF031D /* With one section - NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				6EDC0E741B03481700CF031D /* DVATableViewDatasourceNSArrayController.h */,
+				6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */,
+			);
+			name = "With one section - NSArray";
+			sourceTree = "<group>";
+		};
+		6EDC0E781B03485600CF031D /* Cells and Models */ = {
+			isa = PBXGroup;
+			children = (
+				6EA38A661B02525400120FF7 /* Cell1 */,
+				6EA38A671B02525A00120FF7 /* Cell2 */,
+			);
+			name = "Cells and Models";
 			sourceTree = "<group>";
 		};
 		CACC4543B6D38DA1157DB32F /* Pods */ = {
@@ -325,7 +367,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -412,10 +453,11 @@
 			files = (
 				6003F59E195388D20070C39A /* DVAAppDelegate.m in Sources */,
 				6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */,
-				6E70D0301B01E67200F4E98D /* DVATableViewController.m in Sources */,
+				6E70D0301B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m in Sources */,
 				6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */,
 				6003F5A7195388D20070C39A /* DVAViewController.m in Sources */,
 				6EA38A651B02506700120FF7 /* DVATableViewCellTwo.m in Sources */,
+				6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */,
 				6EA38A6A1B02526F00120FF7 /* DVATestCellModelTwo.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -454,14 +496,6 @@
 				6003F5A0195388D20070C39A /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		6003F5A2195388D20070C39A /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5A3195388D20070C39A /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
@@ -558,6 +592,7 @@
 				INFOPLIST_FILE = "DVATableViewDatasource/DVATableViewDatasource-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -573,6 +608,7 @@
 				INFOPLIST_FILE = "DVATableViewDatasource/DVATableViewDatasource-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

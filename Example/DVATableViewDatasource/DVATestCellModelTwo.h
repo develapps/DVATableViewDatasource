@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <DVATableViewCellIdentifierProtocol.h>
+#import <DVATableViewModelProtocol.h>
 
-@interface DVATestCellModelTwo : NSObject <DVATableViewModelCellDelegate>
+@interface DVATestCellModelTwo : NSObject <DVATableViewModelProtocol>
 @property (nonatomic,strong) NSString*title;
 
 @end

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DVATableViewController : UITableViewController
+@interface DVATableViewDatasourceNSDictionaryController : UITableViewController
 
 @end
 

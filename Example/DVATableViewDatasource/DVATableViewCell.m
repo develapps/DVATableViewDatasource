@@ -9,20 +9,11 @@
 #import "DVATableViewCell.h"
 #import "DVATestCellModel.h"
 
-@interface DVATableViewCell ()
-{
-    DVATestCellModel * _viewModel;
-}
-@end
-
 @implementation DVATableViewCell
 
--(id)viewModel{
-    return _viewModel;
-}
 
--(void)setViewModel:(id)viewModel{
-    _viewModel=(DVATestCellModel*)viewModel;
-    [self.theLabel setText:_viewModel.title];
+-(void)bindWithModel:(id)viewModel{
+    DVATestCellModel*model=viewModel;
+    [self.theLabel setText:model.title];
 }
 @end

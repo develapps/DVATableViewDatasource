@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DVATableViewConfigurableCellProtocol.h>
+#import <DVATableViewCellProtocol.h>
 
-@interface DVATableViewCell : UITableViewCell <DVATableViewConfigurableCellProtocol>
+@interface DVATableViewCell : UITableViewCell <DVATableViewCellProtocol>
 @property (weak, nonatomic) IBOutlet UILabel *theLabel;
 
 @end
