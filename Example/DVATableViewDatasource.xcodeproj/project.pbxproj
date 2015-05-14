@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		53AEE52A38AB3BA6F8266192 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60460FAA72C9266AD3E9509A /* libPods.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -32,7 +31,6 @@
 		6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */; };
 		6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */; };
 		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
-		9DE886DDE095E7997D12BF89 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -107,8 +105,6 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				9DE886DDE095E7997D12BF89 /* libPods-DVATableViewDatasource.a in Frameworks */,
-				53AEE52A38AB3BA6F8266192 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

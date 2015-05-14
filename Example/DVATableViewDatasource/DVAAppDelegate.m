@@ -7,12 +7,16 @@
 //
 
 #import "DVAAppDelegate.h"
+#import <MagicalRecord/CoreData+MagicalRecord.h>
+#import "CellEntity.h"
+static NSInteger const numberOfCells=10000;
 
 @implementation DVAAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self cleanAndResetupDB];
     return YES;
 }
 							
@@ -41,6 +45,58 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+     [MagicalRecord cleanUp];
 }
+
+
+
+-(void)setupCoredata{
+    [MagicalRecord setupCoreDataStack];
+    for (int j=0; j<10; j++) {
+        [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
+            if ([[CellEntity MR_findAllInContext:localContext] count]) {
+                return ;
+            }
+            for (int i=0; i<numberOfCells/10; i++) {
+                CellEntity*newCell=[CellEntity MR_createInContext:localContext];
+                newCell.title       =   [NSString stringWithFormat:@"Cell %i",i];
+                newCell.subTitle    =   [NSString stringWithFormat:@"Cell SubTitle %i",i];
+                newCell.section     =   @(i%(numberOfCells/2));
+            }
+            
+        } completion:^(BOOL success, NSError *error) {
+            [[NSManagedObjectContext MR_defaultContext] reset];
+        }];
+    }
+}
+
+
+#pragma mark - clean Core Data DB
+- (void)cleanAndResetupDB {
+    [MagicalRecord cleanUp];
+    
+    NSString *dbStore = [MagicalRecord defaultStoreName];
+    
+    NSURL *storeURL = [NSPersistentStore MR_urlForStoreName:dbStore];
+    NSURL *walURL = [[storeURL URLByDeletingPathExtension] URLByAppendingPathExtension:@"sqlite-wal"];
+    NSURL *shmURL = [[storeURL URLByDeletingPathExtension] URLByAppendingPathExtension:@"sqlite-shm"];
+    
+    NSError *error = nil;
+    BOOL result = YES;
+    
+    for (NSURL *url in @[storeURL, walURL, shmURL]) {
+        if ([[NSFileManager defaultManager] fileExistsAtPath:url.path]) {
+            result = [[NSFileManager defaultManager] removeItemAtURL:url error:&error];
+        }
+    }
+    
+    if (result) {
+        [self setupCoredata];
+    } else {
+        NSLog(@"An error has occurred while deleting %@ error %@", dbStore, error);
+    }
+}
+
+
 
 @end

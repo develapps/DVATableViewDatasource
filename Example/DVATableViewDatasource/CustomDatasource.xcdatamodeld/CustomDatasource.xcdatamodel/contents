@@ -3,7 +3,7 @@
     <entity name="CellEntity" representedClassName="CellEntity" syncable="YES">
         <attribute name="section" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="subTitle" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
     </entity>
     <elements>
         <element name="CellEntity" positionX="-63" positionY="-18" width="128" height="90"/>

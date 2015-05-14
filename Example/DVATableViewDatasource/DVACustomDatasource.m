@@ -12,7 +12,6 @@
 #import "CellEntity.h"
 #import "CellEntityMapper.h"
 
-static NSInteger const numberOfCells=1000;
 
 @interface DVACustomDatasource () <NSFetchedResultsControllerDelegate>
 @property (nonatomic,strong) NSFetchedResultsController*fetchedResultsController;
@@ -20,41 +19,22 @@ static NSInteger const numberOfCells=1000;
 
 @implementation DVACustomDatasource
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        [self setupCoredata];
-    }
-    return self;
-}
-
--(void)dealloc{
-    [MagicalRecord cleanUp];
-}
-
--(void)setupCoredata{
-    [MagicalRecord setupCoreDataStack];
-    [MagicalRecord saveWithBlock:^(NSManagedObjectContext *localContext) {
-        for (int i=0; i<numberOfCells; i++) {
-            CellEntity*newCell=[CellEntity MR_createInContext:localContext];
-            newCell.title       =   [NSString stringWithFormat:@"Cell %i",i];
-            newCell.subTitle    =   [NSString stringWithFormat:@"Cell SubTitle %i",i];
-            newCell.section     =   @(i%50000);
-        }
-        
-    }];}
-
-
-
 #pragma mark - FetchedResults
 
 - (NSFetchedResultsController *)fetchedResultsController {
     if (_fetchedResultsController != nil) {
         return _fetchedResultsController;
     }
-    _fetchedResultsController = [CellEntity MR_fetchAllGroupedBy:@"section" withPredicate:nil sortedBy:@"title" ascending:YES];
+    
+    NSFetchRequest*fr=[NSFetchRequest fetchRequestWithEntityName:[CellEntity description]];
+    [fr setFetchBatchSize:40];
+    [fr setSortDescriptors:@[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]]];
+    _fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fr managedObjectContext:    [NSManagedObjectContext MR_defaultContext] sectionNameKeyPath:nil cacheName:nil];
+    
+//    [CellEntity MR_fetchAllGroupedBy:@"section" withPredicate:nil sortedBy:@"title" ascending:YES];
+    
     _fetchedResultsController.delegate=self;
+    [_fetchedResultsController performFetch:nil];
     return _fetchedResultsController;
 }
 
