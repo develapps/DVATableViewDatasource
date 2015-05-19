@@ -10,7 +10,7 @@
 #define COCOAPODS_POD_AVAILABLE_DVATableViewDatasource
 #define COCOAPODS_VERSION_MAJOR_DVATableViewDatasource 1
 #define COCOAPODS_VERSION_MINOR_DVATableViewDatasource 2
-#define COCOAPODS_VERSION_PATCH_DVATableViewDatasource 1
+#define COCOAPODS_VERSION_PATCH_DVATableViewDatasource 2
 
 // MagicalRecord
 #define COCOAPODS_POD_AVAILABLE_MagicalRecord

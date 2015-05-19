@@ -32,6 +32,7 @@
 		6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */; };
 		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
+		DF1DA0367A7A5DAF510517D1 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				DF1DA0367A7A5DAF510517D1 /* libPods-DVATableViewDatasource.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
