@@ -15,6 +15,9 @@
 
 -(NSArray*)viewModelsForSection:(NSInteger)section{
     NSArray*viewModels=[self objectForKey:@(section)];
+    if (!viewModels) {
+        viewModels=[self objectForKey:[NSString stringWithFormat:@"%i",section]];
+    }
     return viewModels;
 }
 
