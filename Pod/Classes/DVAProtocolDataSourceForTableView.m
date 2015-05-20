@@ -33,7 +33,13 @@
 #pragma mark - datasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [self.viewModelDataSource dva_numberOfSectionsInViewModel];
+    NSInteger sectionCount = [self.viewModelDataSource dva_numberOfSectionsInViewModel];
+    if (sectionCount==0) {
+        if (self.viewModelDataSource && self.noDataView) {
+            tableView.backgroundView = self.noDataView;
+        };
+    } 
+    return sectionCount;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
