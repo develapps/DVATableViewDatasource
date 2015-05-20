@@ -33,6 +33,8 @@
 		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 		DF1DA0367A7A5DAF510517D1 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
+		E5A6722B1B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6722A1B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.m */; };
+		E5A6722E1B0C6D9E004D5D9F /* UITableView+Downloading.m in Sources */ = {isa = PBXBuildFile; fileRef = E5A6722D1B0C6D9E004D5D9F /* UITableView+Downloading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,10 @@
 		899B2999DC3C354AEFE19E81 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8D98810DB9F6E85440DD2CC7 /* Pods-DVATableViewDatasource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DVATableViewDatasource.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DVATableViewDatasource/Pods-DVATableViewDatasource.debug.xcconfig"; sourceTree = "<group>"; };
 		E2AB0CF42CAE3F0C76729BF6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E5A672291B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewEmptyDatasetViewController.h; sourceTree = "<group>"; };
+		E5A6722A1B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewEmptyDatasetViewController.m; sourceTree = "<group>"; };
+		E5A6722C1B0C6D9E004D5D9F /* UITableView+Downloading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Downloading.h"; sourceTree = "<group>"; };
+		E5A6722D1B0C6D9E004D5D9F /* UITableView+Downloading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Downloading.m"; sourceTree = "<group>"; };
 		F7752A1BF75B4DB2D15CB304 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -307,6 +313,7 @@
 				6EDC0E731B0347C800CF031D /* With one section - NSArray */,
 				6EA38A5C1B0249B600120FF7 /* With two sections - NSDictionary */,
 				6E64E7B71B038D6D003B0080 /* With Custom Datasource */,
+				E5A672281B0C64FD004D5D9F /* Empty Dataset */,
 			);
 			name = "Using Protocol";
 			sourceTree = "<group>";
@@ -338,6 +345,17 @@
 				899B2999DC3C354AEFE19E81 /* Pods-Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5A672281B0C64FD004D5D9F /* Empty Dataset */ = {
+			isa = PBXGroup;
+			children = (
+				E5A6722C1B0C6D9E004D5D9F /* UITableView+Downloading.h */,
+				E5A6722D1B0C6D9E004D5D9F /* UITableView+Downloading.m */,
+				E5A672291B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.h */,
+				E5A6722A1B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.m */,
+			);
+			name = "Empty Dataset";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -508,8 +526,10 @@
 				6E64E7BE1B038DE9003B0080 /* DVACustomDatasource.m in Sources */,
 				6003F59E195388D20070C39A /* DVAAppDelegate.m in Sources */,
 				6E64E7D21B03A6E9003B0080 /* CustomDatasourceCell.m in Sources */,
+				E5A6722E1B0C6D9E004D5D9F /* UITableView+Downloading.m in Sources */,
 				6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */,
 				6E70D0301B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m in Sources */,
+				E5A6722B1B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.m in Sources */,
 				6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */,
 				6003F5A7195388D20070C39A /* DVAViewController.m in Sources */,
 				6E64E7BA1B038DA6003B0080 /* DVATableViewCustomDatasource.m in Sources */,
