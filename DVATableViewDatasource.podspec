@@ -27,6 +27,8 @@ Pod::Spec.new do |s|
                         New 1.2.4
                         ---------
                        * Added a new NSDictionary+DVATableViewModelProtocol category that lets you implement the full viewModel as a plain NSDictionary by providing a "dva_cellIdentifier" key.
+                       * Added categories to let you initialize a tableView from an NSArray or NSDictionary plist.
+
                        DESC
   s.homepage         = "http://www.develapps.es"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
