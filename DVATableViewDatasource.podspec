@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "1.2.3"
+  s.version          = "1.2.4"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -19,6 +19,14 @@ Pod::Spec.new do |s|
                        * Create more complex tableView with different sections, cell types, configurations, etc.
                        * Add simple header/footer per section.
                        * Also register cell NIBs at the tableView.
+
+                        New 1.2.3
+                        ---------
+                       * Fixes noDataView
+
+                        New 1.2.4
+                        ---------
+                       * Added a new NSDictionary+DVATableViewModelProtocol category that lets you implement the full viewModel as a plain NSDictionary by providing a "dva_cellIdentifier" key.
                        DESC
   s.homepage         = "http://www.develapps.es"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
