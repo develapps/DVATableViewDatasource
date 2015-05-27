@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DVATableViewDatasource: 936c95cbb21dbbf18d0bb7a4e0adea6ea13c444a
+  DVATableViewDatasource: 0a8ddac50e640d4ac3cca3e1fa7a350647ece8c5
   MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
 
 COCOAPODS: 0.37.1
