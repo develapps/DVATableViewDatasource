@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "1.3.0"
+  s.version          = "1.3.1"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -28,6 +28,11 @@ Pod::Spec.new do |s|
                         ---------
                        * Added a new NSDictionary+DVATableViewModelProtocol category that lets you implement the full viewModel as a plain NSDictionary by providing a "dva_cellIdentifier" key.
                        * Added categories to let you initialize a tableView from an NSArray or NSDictionary plist.
+
+                        New 1.3.1
+                        ---------
+                        * Updated MagicalRecord to 2.3.
+
 
                        DESC
   s.homepage         = "http://www.develapps.es"
