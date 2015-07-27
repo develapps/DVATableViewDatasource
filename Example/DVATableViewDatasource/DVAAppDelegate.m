@@ -7,7 +7,7 @@
 //
 
 #import "DVAAppDelegate.h"
-#import <MagicalRecord/CoreData+MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord.h>
 #import "CellEntity.h"
 static NSInteger const numberOfCells=10000;
 
@@ -58,7 +58,7 @@ static NSInteger const numberOfCells=10000;
                 return ;
             }
             for (int i=0; i<numberOfCells/10; i++) {
-                CellEntity*newCell=[CellEntity MR_createInContext:localContext];
+                CellEntity*newCell=[CellEntity MR_createEntityInContext:localContext];
                 newCell.title       =   [NSString stringWithFormat:@"Cell %i",i];
                 newCell.subTitle    =   [NSString stringWithFormat:@"Cell SubTitle %i",i];
                 newCell.section     =   @(i%(numberOfCells/2));

@@ -8,7 +8,7 @@
 
 #import "DVACustomDatasource.h"
 #import <CoreData/CoreData.h>
-#import <MagicalRecord/CoreData+MagicalRecord.h>
+#import <MagicalRecord/MagicalRecord.h>
 #import "CellEntity.h"
 #import "CellEntityMapper.h"
 
