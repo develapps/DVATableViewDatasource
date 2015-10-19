@@ -290,6 +290,21 @@
 			name = Cell1;
 			sourceTree = "<group>";
 		};
+		6EAC56501BD4CD93007168BF /* Editable TableView */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC56511BD4CDB7007168BF /* Custom */,
+			);
+			name = "Editable TableView";
+			sourceTree = "<group>";
+		};
+		6EAC56511BD4CDB7007168BF /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Custom;
+			sourceTree = "<group>";
+		};
 		6EDC0E701B0347A800CF031D /* Tables */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +329,7 @@
 				6EA38A5C1B0249B600120FF7 /* With two sections - NSDictionary */,
 				6E64E7B71B038D6D003B0080 /* With Custom Datasource */,
 				E5A672281B0C64FD004D5D9F /* Empty Dataset */,
+				6EAC56501BD4CD93007168BF /* Editable TableView */,
 			);
 			name = "Using Protocol";
 			sourceTree = "<group>";
@@ -370,6 +386,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				12B01A7E0E59885F06946133 /* Copy Pods Resources */,
+				7B99577D0A4D49FFC2A5B7D5 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,6 +406,7 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				6C041EFBD2D110ADC2511064 /* Copy Pods Resources */,
+				952A2BD42431A38CBC1C67C1 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,7 +425,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DVA;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pablo Romeu";
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -501,6 +519,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7B99577D0A4D49FFC2A5B7D5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DVATableViewDatasource/Pods-DVATableViewDatasource-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		84ABD3FE6F88E5597B929E03 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -514,6 +547,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		952A2BD42431A38CBC1C67C1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -605,6 +653,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -669,6 +718,7 @@
 				GCC_PREFIX_HEADER = "DVATableViewDatasource/DVATableViewDatasource-Prefix.pch";
 				INFOPLIST_FILE = "DVATableViewDatasource/DVATableViewDatasource-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -685,6 +735,7 @@
 				GCC_PREFIX_HEADER = "DVATableViewDatasource/DVATableViewDatasource-Prefix.pch";
 				INFOPLIST_FILE = "DVATableViewDatasource/DVATableViewDatasource-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
@@ -708,6 +759,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -727,6 +779,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

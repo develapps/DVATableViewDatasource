@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "1.3.1"
+  s.version          = "1.4.0"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -19,6 +19,7 @@ Pod::Spec.new do |s|
                        * Create more complex tableView with different sections, cell types, configurations, etc.
                        * Add simple header/footer per section.
                        * Also register cell NIBs at the tableView.
+                       * Add animation to modifications at the tableView
 
                         New 1.2.3
                         ---------
@@ -32,6 +33,10 @@ Pod::Spec.new do |s|
                         New 1.3.1
                         ---------
                         * Updated MagicalRecord to 2.3.
+
+                        New 1.4.0
+                        ---------
+                        * Added editable table view
 
 
                        DESC
