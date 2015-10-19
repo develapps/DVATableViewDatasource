@@ -32,6 +32,7 @@
 		6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */; };
 		6EAC56541BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */; settings = {ASSET_TAGS = (); }; };
 		6EAC56571BD4CF67007168BF /* DVACustomEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6EAC56591BD4EC05007168BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC56581BD4EC05007168BF /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 		DF1DA0367A7A5DAF510517D1 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
@@ -97,6 +98,7 @@
 		6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCustomEditableDataSource.m; sourceTree = "<group>"; };
 		6EAC56551BD4CF67007168BF /* DVACustomEditableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVACustomEditableTableViewController.h; sourceTree = "<group>"; };
 		6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVACustomEditableTableViewController.m; sourceTree = "<group>"; };
+		6EAC56581BD4EC05007168BF /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		6EDC0E741B03481700CF031D /* DVATableViewDatasourceNSArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewDatasourceNSArrayController.h; sourceTree = "<group>"; };
 		6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewDatasourceNSArrayController.m; sourceTree = "<group>"; };
 		7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6EDC0E701B0347A800CF031D /* Tables */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				6EAC56581BD4EC05007168BF /* LaunchScreen.xib */,
 			);
 			path = DVATableViewDatasource;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EAC56591BD4EC05007168BF /* LaunchScreen.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -725,7 +729,6 @@
 			baseConfigurationReference = 8D98810DB9F6E85440DD2CC7 /* Pods-DVATableViewDatasource.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVATableViewDatasource/DVATableViewDatasource-Prefix.pch";
 				INFOPLIST_FILE = "DVATableViewDatasource/DVATableViewDatasource-Info.plist";
@@ -742,7 +745,6 @@
 			baseConfigurationReference = 67B99DC11BC53A6F7961E34E /* Pods-DVATableViewDatasource.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DVATableViewDatasource/DVATableViewDatasource-Prefix.pch";
 				INFOPLIST_FILE = "DVATableViewDatasource/DVATableViewDatasource-Info.plist";

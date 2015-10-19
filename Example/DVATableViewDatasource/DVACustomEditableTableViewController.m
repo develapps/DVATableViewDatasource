@@ -58,13 +58,17 @@
 }
 
 -(void)setupCells{
-    for (int i=0; i<20; i++ ) {
-        CellEntityMapper *cellVM = [CellEntityMapper new];
-        cellVM.title =[NSString stringWithFormat:@"Cell %zd",i];
-        cellVM.subTitle = @"subTitle";
-
-        [self.viewModelDatasource dva_insertViewModel:cellVM atIndexPath:[NSIndexPath indexPathForItem:i inSection:0]];
+    for (int j=0; j<4; j++) {
+        for (int i=0; i<4; i++ ) {
+            CellEntityMapper *cellVM = [CellEntityMapper new];
+            cellVM.title =[NSString stringWithFormat:@"Cell %zd",i];
+            cellVM.subTitle = [NSString stringWithFormat:@"Section %zd",j];
+            [self.viewModelDatasource dva_insertViewModel:cellVM
+                                              atIndexPath:[NSIndexPath indexPathForItem:i inSection:j]];
+        }
+        
     }
+
 }
 
 #pragma mark - TableViewDataSource Delegate
