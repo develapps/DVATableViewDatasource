@@ -220,7 +220,6 @@
         
         [self dva_cancelPendingEditions];
         
-#warning can this occur in a tableView?
         // Maybe some modifications occurred during our animation
         if ([self.cellUpdates count] > 0 ||
             [self.sectionUpdates count] >0) {
