@@ -154,7 +154,7 @@
         updates();
     }
     _grouped = !_grouped;
-};
+}
 
 
 @end

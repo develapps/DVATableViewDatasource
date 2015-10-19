@@ -33,6 +33,8 @@
 		6EAC56541BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */; settings = {ASSET_TAGS = (); }; };
 		6EAC56571BD4CF67007168BF /* DVACustomEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6EAC56591BD4EC05007168BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC56581BD4EC05007168BF /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		6EAC565F1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC565E1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6EAC56621BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56611BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 		DF1DA0367A7A5DAF510517D1 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
@@ -99,6 +101,10 @@
 		6EAC56551BD4CF67007168BF /* DVACustomEditableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVACustomEditableTableViewController.h; sourceTree = "<group>"; };
 		6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVACustomEditableTableViewController.m; sourceTree = "<group>"; };
 		6EAC56581BD4EC05007168BF /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		6EAC565D1BD4F01C007168BF /* DVATableViewArrayEditableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewArrayEditableViewController.h; sourceTree = "<group>"; };
+		6EAC565E1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewArrayEditableViewController.m; sourceTree = "<group>"; };
+		6EAC56601BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewSectionArrayEditableViewController.h; sourceTree = "<group>"; };
+		6EAC56611BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewSectionArrayEditableViewController.m; sourceTree = "<group>"; };
 		6EDC0E741B03481700CF031D /* DVATableViewDatasourceNSArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewDatasourceNSArrayController.h; sourceTree = "<group>"; };
 		6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewDatasourceNSArrayController.m; sourceTree = "<group>"; };
 		7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +308,8 @@
 		6EAC56501BD4CD93007168BF /* Editable TableView */ = {
 			isa = PBXGroup;
 			children = (
+				6EAC565C1BD4EFDB007168BF /* Array - Multiple Sections */,
+				6EAC565B1BD4EFCF007168BF /* Array - One Section */,
 				6EAC56511BD4CDB7007168BF /* Custom */,
 			);
 			name = "Editable TableView";
@@ -316,6 +324,24 @@
 				6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */,
 			);
 			name = Custom;
+			sourceTree = "<group>";
+		};
+		6EAC565B1BD4EFCF007168BF /* Array - One Section */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC565D1BD4F01C007168BF /* DVATableViewArrayEditableViewController.h */,
+				6EAC565E1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m */,
+			);
+			name = "Array - One Section";
+			sourceTree = "<group>";
+		};
+		6EAC565C1BD4EFDB007168BF /* Array - Multiple Sections */ = {
+			isa = PBXGroup;
+			children = (
+				6EAC56601BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.h */,
+				6EAC56611BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m */,
+			);
+			name = "Array - Multiple Sections";
 			sourceTree = "<group>";
 		};
 		6EDC0E701B0347A800CF031D /* Tables */ = {
@@ -587,7 +613,9 @@
 			files = (
 				6E64E7BE1B038DE9003B0080 /* DVACustomDatasource.m in Sources */,
 				6003F59E195388D20070C39A /* DVAAppDelegate.m in Sources */,
+				6EAC565F1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m in Sources */,
 				6E64E7D21B03A6E9003B0080 /* CustomDatasourceCell.m in Sources */,
+				6EAC56621BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m in Sources */,
 				E5A6722E1B0C6D9E004D5D9F /* UITableView+Downloading.m in Sources */,
 				6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */,
 				6E70D0301B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m in Sources */,
