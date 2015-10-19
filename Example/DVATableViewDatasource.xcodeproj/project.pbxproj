@@ -30,6 +30,8 @@
 		6E70D0301B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E70D02F1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m */; };
 		6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */; };
 		6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */; };
+		6EAC56541BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */; settings = {ASSET_TAGS = (); }; };
+		6EAC56571BD4CF67007168BF /* DVACustomEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 		DF1DA0367A7A5DAF510517D1 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
@@ -91,6 +93,10 @@
 		6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATestCellModel.m; sourceTree = "<group>"; };
 		6EA38A601B024B0C00120FF7 /* DVATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewCell.h; sourceTree = "<group>"; };
 		6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCell.m; sourceTree = "<group>"; };
+		6EAC56521BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewCustomEditableDataSource.h; sourceTree = "<group>"; };
+		6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewCustomEditableDataSource.m; sourceTree = "<group>"; };
+		6EAC56551BD4CF67007168BF /* DVACustomEditableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVACustomEditableTableViewController.h; sourceTree = "<group>"; };
+		6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVACustomEditableTableViewController.m; sourceTree = "<group>"; };
 		6EDC0E741B03481700CF031D /* DVATableViewDatasourceNSArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVATableViewDatasourceNSArrayController.h; sourceTree = "<group>"; };
 		6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DVATableViewDatasourceNSArrayController.m; sourceTree = "<group>"; };
 		7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DVATableViewDatasource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -301,6 +307,10 @@
 		6EAC56511BD4CDB7007168BF /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				6EAC56521BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.h */,
+				6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */,
+				6EAC56551BD4CF67007168BF /* DVACustomEditableTableViewController.h */,
+				6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -577,6 +587,7 @@
 				E5A6722E1B0C6D9E004D5D9F /* UITableView+Downloading.m in Sources */,
 				6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */,
 				6E70D0301B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m in Sources */,
+				6EAC56571BD4CF67007168BF /* DVACustomEditableTableViewController.m in Sources */,
 				E5A6722B1B0C652F004D5D9F /* DVATableViewEmptyDatasetViewController.m in Sources */,
 				6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */,
 				6003F5A7195388D20070C39A /* DVAViewController.m in Sources */,
@@ -586,6 +597,7 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				6E64E7C11B039501003B0080 /* CustomDatasource.xcdatamodeld in Sources */,
 				6E64E7CE1B03A5F6003B0080 /* CellEntityMapper.m in Sources */,
+				6EAC56541BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
