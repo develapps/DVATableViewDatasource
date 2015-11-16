@@ -27,7 +27,6 @@
 -(void)configureWithAnimatorManager:(DVATableViewEditManager *)manager{
     manager.viewModelDataSource = self;
     self.manager = manager;
-    
 }
 
 - (instancetype)init
