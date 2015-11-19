@@ -17,7 +17,6 @@
  
  @since 1.0
  */
--(void)configureWithAnimatorManager:(DVATableViewEditManager*)manager;
 @optional
 -(void)dva_insertViewModel:(id)viewModel
                atIndexPath:(NSIndexPath*)indexPath;

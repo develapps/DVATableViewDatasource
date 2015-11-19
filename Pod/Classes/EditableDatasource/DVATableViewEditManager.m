@@ -228,8 +228,9 @@
         else{
             self.isPerformingUpdates = NO;
         }
-        if (completion) completion(YES);
         [self.tableView endUpdates];
+        if (completion) completion(YES);
+
     }
 }
 
