@@ -30,11 +30,11 @@
 		6E70D0301B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E70D02F1B01E67200F4E98D /* DVATableViewDatasourceNSDictionaryController.m */; };
 		6EA38A5F1B0249D400120FF7 /* DVATestCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A5E1B0249D400120FF7 /* DVATestCellModel.m */; };
 		6EA38A621B024B0C00120FF7 /* DVATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA38A611B024B0C00120FF7 /* DVATableViewCell.m */; };
-		6EAC56541BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */; settings = {ASSET_TAGS = (); }; };
-		6EAC56571BD4CF67007168BF /* DVACustomEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6EAC56591BD4EC05007168BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC56581BD4EC05007168BF /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
-		6EAC565F1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC565E1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		6EAC56621BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56611BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		6EAC56541BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56531BD4CE8A007168BF /* DVATableViewCustomEditableDataSource.m */; };
+		6EAC56571BD4CF67007168BF /* DVACustomEditableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56561BD4CF67007168BF /* DVACustomEditableTableViewController.m */; };
+		6EAC56591BD4EC05007168BF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EAC56581BD4EC05007168BF /* LaunchScreen.xib */; };
+		6EAC565F1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC565E1BD4F01C007168BF /* DVATableViewArrayEditableViewController.m */; };
+		6EAC56621BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAC56611BD4F02F007168BF /* DVATableViewSectionArrayEditableViewController.m */; };
 		6EDC0E761B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EDC0E751B03482B00CF031D /* DVATableViewDatasourceNSArrayController.m */; };
 		DDDFA28FCAC67B3349C85D80 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B7B93718075D8A79EB54B3 /* libPods-Tests.a */; };
 		DF1DA0367A7A5DAF510517D1 /* libPods-DVATableViewDatasource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B07C8515864BFAFE37C71A6 /* libPods-DVATableViewDatasource.a */; };
