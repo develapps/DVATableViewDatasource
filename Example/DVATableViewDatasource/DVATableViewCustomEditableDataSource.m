@@ -65,6 +65,12 @@
         [[self.viewModelArray objectAtIndex:indexPath.section] count]==0) {
         return nil;
     }
+    if (indexPath.section == [self.viewModelArray count]-1) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self tappedButton];
+        });
+
+    }
 
     return [[self viewModelsAtSection:indexPath.section] objectAtIndex:indexPath.row];
 }
@@ -136,6 +142,19 @@
                                                        inSection:0];
         
             NSLog(@"moving %@ to %@",ip,ipOther);
+        
+        
+        NSUInteger section = [self.viewModelArray count];
+            array = [NSMutableArray arrayWithObject:cellVM];
+            [self.manager dva_animateInsertSectionViewModel:array atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+            // Insert
+            cellVM.title = @"INSERTED CELL";
+            [self.manager dva_animateInsertViewModel:cellVM atIndexPath:[NSIndexPath indexPathForItem:0 inSection:section]];
+            [self.manager dva_animateInsertViewModel:cellVM atIndexPath:[NSIndexPath indexPathForItem:1 inSection:section]];
+            [self.manager dva_animateInsertViewModel:cellVM atIndexPath:[NSIndexPath indexPathForItem:2 inSection:section]];
+            [self.manager dva_animateInsertViewModel:cellVM atIndexPath:[NSIndexPath indexPathForItem:3 inSection:section]];
+
+        
             [self.manager dva_animateMoveViewModelAtIndexPath:ip toIndexPath:ipOther];
             
             
