@@ -19,6 +19,7 @@
 @property (nonatomic,strong) DVAProtocolDataSourceForTableView      *dataSource;
 @property (nonatomic,weak)   IBOutlet UITableView                   *tableView;
 @property (nonatomic)        BOOL                                   grouped;
+@property (nonatomic)        BOOL                                   isUpdating;
 
 @end
 
@@ -53,20 +54,24 @@
 }
 
 -(void)tappedButton:(UIBarButtonItem*)button{
-    
+    if (_isUpdating) {
+        return;
+    }
+    _isUpdating = YES;
     void (^updates)(void) = ^void(void) {
         // Insert
         CellEntityMapper *cellVM=[[CellEntityMapper alloc] init];
         cellVM.title = @"INSERTED CELL";
         [self.viewModelDatasource insertObject:cellVM atIndex:0];
-        
+        [self.viewModelDatasource insertObject:cellVM atIndex:1];
+
         // Delete
-        [self.viewModelDatasource removeObjectAtIndex:2];
+        [self.viewModelDatasource removeObjectAtIndex:3];
         
         // Update
         cellVM=[[CellEntityMapper alloc] init];
         cellVM.title = @"UPDATED CELL";
-        [self.viewModelDatasource replaceObjectAtIndex:1 withObject:cellVM];
+        [self.viewModelDatasource replaceObjectAtIndex:2 withObject:cellVM];
         
     };
     
@@ -76,17 +81,19 @@
             updates();
         } withCompletionBlock:^(BOOL finished) {
             NSLog(@"done block updates!");
+            _isUpdating = NO;
         }];
     }
     else{
         updates();
+        _isUpdating = NO;
     }
     _grouped = !_grouped;
 }
 
 -(void)setupCells{
     for (int j=0; j<1; j++) {
-        for (int i=0; i<4; i++ ) {
+        for (int i=0; i<40; i++ ) {
             CellEntityMapper *cellVM = [CellEntityMapper new];
             cellVM.title =[NSString stringWithFormat:@"Cell %zd",i];
             cellVM.subTitle = [NSString stringWithFormat:@"Section %zd",j];
@@ -104,6 +111,14 @@
     if ([cell isKindOfClass:[CustomDatasourceCell class]]) {
         CustomDatasourceCell*aCell=(CustomDatasourceCell*)cell;
         [aCell.contentView setBackgroundColor:indexPath.row%2==0?[UIColor redColor]:[UIColor blueColor]];
+    }
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row >= 20 && indexPath.row == self.viewModelDatasource.count-1) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self tappedButton:nil];
+        });
     }
 }
 

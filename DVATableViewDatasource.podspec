@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "1.4.2"
+  s.version          = "1.5.0"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -38,6 +38,9 @@ Pod::Spec.new do |s|
                         ---------
                         * Added editable table view
 
+                        New 1.5.0
+                        ---------
+                        * Moved pods as subpods
 
                        DESC
   s.homepage         = "http://www.develapps.es"
@@ -56,6 +59,22 @@ Pod::Spec.new do |s|
     'DVATableViewDatasource' => ['Pod/Assets/*.png']
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
+
+    s.public_header_files = 'Pod/Classes/*.h', 'Pod/Classes/Subclasses/*.h'
+    s.source_files = 'Pod/Classes/*.{h,m}', 'Pod/Classes/Subclasses/*.{h,m}'
+
+    s.frameworks = 'UIKit'
+
+    s.subspec 'Protocols' do |ss|
+        ss.source_files = 'Pod/Classes/Protocols/*.{h,m}'
+        ss.public_header_files = 'Pod/Classes/Protocols/*.{h}'
+    end
+    s.subspec 'EditableDatasource' do |ss|
+        ss.dependency 'DVATableViewDatasource/Protocols'
+        ss.source_files = 'Pod/Classes/EditableDatasource/*.{h,m}'
+        ss.public_header_files = 'Pod/Classes/EditableDatasource/*.{h}'
+    end
+
+
 end
