@@ -107,6 +107,8 @@
     NSAssert(section>=0, @"ERROR %@: Trying to setup cells for an invalid section %li",[self class],(long)section);
     
     if (!items ||[items count]==0) {
+        [self.itemsPerSection       setObject:@[]   forKey:[@(section) stringValue]];
+        [self.identifiersPerSection setObject:@[]   forKey:[@(section) stringValue]];
         return;
     }
     
