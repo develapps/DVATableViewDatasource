@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "1.5.0"
+  s.version          = "1.5.1"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -41,6 +41,11 @@ Pod::Spec.new do |s|
                         New 1.5.0
                         ---------
                         * Moved pods as subpods
+
+                        New 1.5.1
+                        ---------
+                        * Fixes when passing no cells to de datasource array
+
 
                        DESC
   s.homepage         = "http://www.develapps.es"
