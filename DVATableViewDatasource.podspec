@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "1.5.1"
+  s.version          = "1.5.2"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -46,6 +46,10 @@ Pod::Spec.new do |s|
                         ---------
                         * Fixes when passing no cells to de datasource array
 
+                        New 1.5.2
+                        ---------
+                        * Fixed public headers.
+
 
                        DESC
   s.homepage         = "http://www.develapps.es"
@@ -72,13 +76,11 @@ Pod::Spec.new do |s|
     s.frameworks = 'UIKit'
 
     s.subspec 'Protocols' do |ss|
-        ss.source_files = 'Pod/Classes/Protocols/*.{h,m}'
-        ss.public_header_files = 'Pod/Classes/Protocols/*.{h}'
+        ss.source_files = 'Pod/Classes/Protocols/**/*.{h,m}'
     end
     s.subspec 'EditableDatasource' do |ss|
         ss.dependency 'DVATableViewDatasource/Protocols'
-        ss.source_files = 'Pod/Classes/EditableDatasource/*.{h,m}'
-        ss.public_header_files = 'Pod/Classes/EditableDatasource/*.{h}'
+        ss.source_files = 'Pod/Classes/EditableDatasource/**/*.{h,m}'
     end
 
 
