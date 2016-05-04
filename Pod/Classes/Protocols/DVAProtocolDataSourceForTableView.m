@@ -36,7 +36,8 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSInteger sectionCount = [self.viewModelDataSource dva_numberOfSectionsInViewModel];
     if (sectionCount==0) {
-        if (self.viewModelDataSource && self.noDataView) {
+        if (self.viewModelDataSource && self.noDataView
+            && tableView.backgroundView != self.noDataView) {
             self.oldView = tableView.backgroundView;
             tableView.backgroundView = self.noDataView;
         }
