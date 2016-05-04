@@ -67,21 +67,17 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'DVATableViewDatasource' => ['Pod/Assets/*.png']
   }
 
   s.frameworks = 'UIKit'
 
-    s.public_header_files = 'Pod/Classes/*.h', 'Pod/Classes/Subclasses/*.h'
-    s.source_files = 'Pod/Classes/*.{h,m}', 'Pod/Classes/Subclasses/*.{h,m}'
+    s.public_header_files = 'Pod/Classes/Protocols/**/*.h'
+    s.source_files = 'Pod/Classes/Protocols/**/*.{h,m}'
 
     s.frameworks = 'UIKit'
 
-    s.subspec 'Protocols' do |ss|
-        ss.source_files = 'Pod/Classes/Protocols/**/*.{h,m}'
-    end
     s.subspec 'EditableDatasource' do |ss|
         ss.dependency 'DVATableViewDatasource/Protocols'
         ss.source_files = 'Pod/Classes/EditableDatasource/**/*.{h,m}'
