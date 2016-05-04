@@ -1,10 +1,10 @@
 PODS:
-  - DVATableViewDatasource (1.5.2):
-    - DVATableViewDatasource/EditableDatasource (= 1.5.2)
-    - DVATableViewDatasource/Protocols (= 1.5.2)
-  - DVATableViewDatasource/EditableDatasource (1.5.2):
+  - DVATableViewDatasource (2.0):
+    - DVATableViewDatasource/EditableDatasource (= 2.0)
+    - DVATableViewDatasource/Protocols (= 2.0)
+  - DVATableViewDatasource/EditableDatasource (2.0):
     - DVATableViewDatasource/Protocols
-  - DVATableViewDatasource/Protocols (1.5.2)
+  - DVATableViewDatasource/Protocols (2.0)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DVATableViewDatasource: 16bccdafc98e4a207a0c497200036feea0de072b
+  DVATableViewDatasource: 917e660dbf033eed516d83f298542393facccd68
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
 
 COCOAPODS: 0.39.0
