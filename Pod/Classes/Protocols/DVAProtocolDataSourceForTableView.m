@@ -13,6 +13,7 @@
 #pragma mark - views
 @property (strong,nonatomic)    NSMutableDictionary*titleHeadersPerSection,*titleFootersPerSection;
 @property (nonatomic)           BOOL debug;
+@property (strong,nonatomic)    UIView*oldView;
 
 @end
 
@@ -36,9 +37,13 @@
     NSInteger sectionCount = [self.viewModelDataSource dva_numberOfSectionsInViewModel];
     if (sectionCount==0) {
         if (self.viewModelDataSource && self.noDataView) {
+            self.oldView = tableView.backgroundView;
             tableView.backgroundView = self.noDataView;
-        };
-    } 
+        }
+    }
+    else{
+        tableView.backgroundView = self.oldView;
+    }
     return sectionCount;
 }
 
