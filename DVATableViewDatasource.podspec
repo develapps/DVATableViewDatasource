@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "2.0.1"
+  s.version          = "2.0.2"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -53,9 +53,9 @@ Pod::Spec.new do |s|
                         ---------
                         * Removed arrayDataSource
                         * Fixed empty array should show noData view.
-                        New 2.0.1
+                        New 2.0.2
                         ---------
-                        * Fixed dependency
+                        * Fixed dependency and background
 
 
                        DESC
