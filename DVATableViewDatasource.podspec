@@ -76,23 +76,10 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'UIKit'
 
-<<<<<<< HEAD
-    s.public_header_files = 'Pod/Classes/Protocols/**/*.h'
-    s.source_files = 'Pod/Classes/Protocols/**/*.{h,m}'
-
-    s.frameworks = 'UIKit'
-    s.subspec 'Protocols' do |ss|
-        ss.source_files = 'Pod/Classes/Protocols/**/*.{h,m}'
-    end
-
-    s.subspec 'EditableDatasource' do |ss|
-ss.dependency 'DVATableViewDatasource/Protocols'
-        ss.source_files = 'Pod/Classes/EditableDatasource/**/*.{h,m}'
-    end
-=======
     s.public_header_files = 'Pod/Classes/**/*.h'
     s.source_files = 'Pod/Classes/**/*.{h,m}'
->>>>>>> release/2.0.1
+
+    s.frameworks = 'UIKit'
 
 
 end
