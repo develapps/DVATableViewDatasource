@@ -348,16 +348,8 @@
 			isa = PBXGroup;
 			children = (
 				6EDC0E721B0347B100CF031D /* Using Protocol */,
-				6EDC0E711B0347AC00CF031D /* Using Configuration Array */,
 			);
 			name = Tables;
-			sourceTree = "<group>";
-		};
-		6EDC0E711B0347AC00CF031D /* Using Configuration Array */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Using Configuration Array";
 			sourceTree = "<group>";
 		};
 		6EDC0E721B0347B100CF031D /* Using Protocol */ = {
