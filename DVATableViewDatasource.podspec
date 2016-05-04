@@ -49,7 +49,7 @@ Pod::Spec.new do |s|
                         New 1.5.2
                         ---------
                         * Fixed public headers.
-                        New 2.0
+                        New 2.0.0
                         ---------
                         * Removed arrayDataSource
                         * Fixed empty array should show noData view.
@@ -67,6 +67,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
+  s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
     'DVATableViewDatasource' => ['Pod/Assets/*.png']
   }
