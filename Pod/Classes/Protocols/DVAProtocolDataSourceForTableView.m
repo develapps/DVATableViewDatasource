@@ -41,7 +41,7 @@
             tableView.backgroundView = self.noDataView;
         }
     }
-    else{
+    else if (tableView.backgroundView == self.noDataView){
         tableView.backgroundView = self.oldView;
     }
     return sectionCount;
