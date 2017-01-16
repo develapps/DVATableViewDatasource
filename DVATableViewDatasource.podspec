@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "DVATableViewDatasource"
-  s.version          = "2.0.4"
+  s.version          = "2.0.5"
   s.summary          = "A simplified datasource for UITableView."
   s.description      = <<-DESC
                         This is a simplified datasource for UITableView, which avoids most of the datasource code to remain in the View/ViewController code.
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Rafa Barberá" => "rafa@develapps.es",
                          "Pablo Romeu" => "pablo.romeu@develapps.es" }
-  s.source           = { :git => "https://bitbucket.com/dvalibs/DVATableViewDatasource.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/develapps/DVATableViewDatasource/DVATableViewDatasource.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/rbarbera'
 
   s.platform     = :ios, '8.0'
