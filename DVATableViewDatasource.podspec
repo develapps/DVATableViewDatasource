@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.resource_bundles = {
-    'DVATableViewDatasource' => ['Pod/Assets/*.png']
+#   'DVATableViewDatasource' => ['Pod/Assets/*.png']
   }
 
   s.frameworks = 'UIKit'
