@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "Rafa Barberá" => "rafa@develapps.es",
                          "Pablo Romeu" => "pablo.romeu@develapps.es" }
-  s.source           = { :git => "https://github.com/develapps/DVATableViewDatasource/DVATableViewDatasource.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/develapps/DVATableViewDatasource.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/rbarbera'
 
   s.platform     = :ios, '8.0'
